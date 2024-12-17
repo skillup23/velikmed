@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* @apply bg-gradient-to-tr from-[#E17022] from-30% via-[#d97935] to-[#dfa479]; */
+    @apply bg-white text-[#393939];
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+}
