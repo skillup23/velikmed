@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import LogoG from '@/public/img/main/logo-g.png';
+import LogoG from "@/public/img/main/logo-g.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <h2 className="mt-4 text=2xl md:text-3xl font-bold text-center">
         Сайт находится в разработке
       </h2>
+      <h1 className="font-mono">Клиника ВеликМед</h1>
     </main>
   );
 }

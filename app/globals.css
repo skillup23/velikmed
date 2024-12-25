@@ -3,6 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "RandomGrotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/app/fonts/random_grotesque/RG-SlimBook.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "RandomGrotesque";
+    font-style: bold;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/app/fonts/random_grotesque/RG-StandardBold.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "MaK";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/app/fonts/mak/MAK.woff) format("woff");
+  }
+  @font-face {
+    font-family: "MaK";
+    font-style: bold;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/app/fonts/mak/MAK-bold.woff) format("woff");
+  }
   body {
     /* @apply bg-gradient-to-tr from-[#E17022] from-30% via-[#d97935] to-[#dfa479]; */
     @apply bg-white text-[#393939];
