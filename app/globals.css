@@ -4,35 +4,34 @@
 
 @layer base {
   @font-face {
-    font-family: "RandomGrotesque";
+    font-family: 'RandomGrotesque';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/app/fonts/random_grotesque/RG-SlimBook.ttf) format("ttf");
+    src: url(/app/fonts/random_grotesque/RG-SlimBook.ttf) format('ttf');
   }
   @font-face {
-    font-family: "RandomGrotesque";
+    font-family: 'RandomGrotesque';
     font-style: bold;
     font-weight: 600;
     font-display: swap;
-    src: url(/app/fonts/random_grotesque/RG-StandardBold.ttf) format("ttf");
+    src: url(/app/fonts/random_grotesque/RG-StandardBold.ttf) format('ttf');
   }
   @font-face {
-    font-family: "MaK";
+    font-family: 'MAK';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/app/fonts/mak/MAK.woff) format("woff");
+    src: url(/app/fonts/mak/MAK.ttf) format('ttf');
   }
   @font-face {
-    font-family: "MaK";
+    font-family: 'MAK';
     font-style: bold;
     font-weight: 600;
     font-display: swap;
-    src: url(/app/fonts/mak/MAK-bold.woff) format("woff");
+    src: url(/app/fonts/mak/MAK-bold.woff) format('woff');
   }
   body {
-    /* @apply bg-gradient-to-tr from-[#E17022] from-30% via-[#d97935] to-[#dfa479]; */
     @apply bg-white text-[#393939];
   }
   h1 {
@@ -40,5 +39,31 @@
   }
   h2 {
     @apply text-2xl;
+  }
+  h5 {
+    @apply text-[20px] leading-5 font-medium;
+  }
+  h6 {
+    @apply text-[18px] leading-5 font-medium;
+  }
+  p {
+    @apply text-[16px] leading-5 font-medium;
+  }
+  .section {
+    @apply mt-[72px];
+  }
+  .animate-simple {
+    @apply transition duration-150 ease-in-out;
+  }
+}
+
+@media (width >= 1536px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+@media (width >= 1280px) {
+  .container {
+    max-width: 1160px;
   }
 }
