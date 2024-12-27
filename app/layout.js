@@ -11,17 +11,22 @@ const roboto = Roboto({
   variable: '--font-roboto',
 });
 
-const randomGrotesque = localFont({
+const Manrope = localFont({
   src: [
     {
-      path: './fonts/random_grotesque/RG-SpaciousBook.ttf',
-      weight: '400',
-      style: 'normal',
+      path: './fonts/manrope/manrope-bold.woff2',
+      weight: '700',
+      style: 'bold',
     },
     {
-      path: './fonts/random_grotesque/RG-StandardBold.ttf',
+      path: './fonts/manrope/manrope-semibold.woff2',
       weight: '600',
-      style: 'bold',
+      style: 'semibold',
+    },
+    {
+      path: './fonts/manrope/manrope-medium.woff2',
+      weight: '500',
+      style: 'medium',
     },
   ],
 });
@@ -50,7 +55,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="ru"
-      className={`${roboto.variable} ${randomGrotesque.className} ${MAK.className} font-sans`}
+      className={`${roboto.variable} ${Manrope.className} ${MAK.className} font-sans`}
     >
       <body>
         <Header />

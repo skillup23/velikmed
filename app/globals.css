@@ -3,19 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'RandomGrotesque';
+  /* @font-face {
+    font-family: 'Manrope';
+    src: url(/app/fonts/manrope/manrope-bold.woff2) format('woff2'),
+      url(/app/fonts/manrope/manrope-bold.woff) format('woff'),
+      url(/app/fonts/manrope/manrope-bold.otf) format('truetype');
     font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/app/fonts/random_grotesque/RG-SlimBook.ttf) format('ttf');
+    font-weight: 700;
   }
   @font-face {
-    font-family: 'RandomGrotesque';
-    font-style: bold;
+    font-family: 'Manrope';
+    src: url(/app/fonts/manrope/manrope-semibold.woff2) format('woff2'),
+      url(/app/fonts/manrope/manrope-semibold.woff) format('woff'),
+      url(/app/fonts/manrope/manrope-semibold.otf) format('truetype');
+    font-style: normal;
     font-weight: 600;
-    font-display: swap;
-    src: url(/app/fonts/random_grotesque/RG-StandardBold.ttf) format('ttf');
   }
   @font-face {
     font-family: 'MAK';
@@ -30,24 +32,27 @@
     font-weight: 600;
     font-display: swap;
     src: url(/app/fonts/mak/MAK-bold.woff) format('woff');
-  }
+  } */
   body {
     @apply bg-white text-[#393939];
   }
   h1 {
-    @apply text-3xl;
+    @apply text-5xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-5xl;
+  }
+  h4 {
+    @apply text-[24px] leading-7 font-semibold tracking-wide;
   }
   h5 {
-    @apply text-[20px] leading-5 font-medium;
+    @apply text-[20px] leading-5 font-semibold tracking-wide;
   }
   h6 {
-    @apply text-[18px] leading-5 font-medium;
+    @apply text-[18px] leading-5 font-semibold tracking-wide;
   }
   p {
-    @apply text-[16px] leading-5 font-medium;
+    @apply text-[16px] leading-5 font-semibold tracking-wide;
   }
   .section {
     @apply mt-[72px];

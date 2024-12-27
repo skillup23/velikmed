@@ -22,7 +22,8 @@ export default {
         'gray-light': '#d3dce6',
       },
       fontFamily: {
-        sans: ['var(--font-roboto), Roboto, sans-serif'],
+        // sans: ['var(--font-roboto), Roboto, sans-serif'],
+        sans: ['Manrope, Roboto, sans-serif'],
         // mono: ['RandomGrotesque, Arial, sans-serif'],
         display: ['MAK, Arial, sans-serif'],
       },

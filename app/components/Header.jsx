@@ -73,7 +73,7 @@ export default function Header() {
 
       <div className="bg-gray-dark">
         <div className="container mx-auto px-5">
-          <h6 className="py-[12.5px] text-white text-center">
+          <h6 className="py-[12.5px] text-white text-center tracking-normal">
             Часы приема: понедельник-пятница с 8:00 до 19:00 | суббота,
             воскресенье с 9:00 до 15:00
           </h6>
@@ -87,7 +87,7 @@ export default function Header() {
               <Link
                 key={id}
                 href={url}
-                className="text-[20px] text-white uppercase font-medium hover:text-gray-light animate-simple"
+                className="text-[20px] text-white uppercase font-medium tracking-wide hover:text-gray-light animate-simple"
               >
                 {title}
               </Link>
