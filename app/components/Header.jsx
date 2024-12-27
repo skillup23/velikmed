@@ -1,36 +1,36 @@
-import LogoG from '@/public/img/main/logo-g.png';
-import Image from 'next/image';
-import Link from 'next/link';
-import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
-import ButtonFeed from './ButtonFeed';
+import LogoG from "@/public/img/main/logo-g.png";
+import Image from "next/image";
+import Link from "next/link";
+import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import ButtonFeed from "./ButtonFeed";
 
 export default function Header() {
   let id = 0;
   const navLinks = [
     {
       id: id++,
-      url: '#',
-      title: 'Услуги',
+      url: "#",
+      title: "Услуги",
     },
     {
       id: id++,
-      url: '#',
-      title: 'Специалисты',
+      url: "#",
+      title: "Специалисты",
     },
     {
       id: id++,
-      url: '#',
-      title: 'Диагностика',
+      url: "#",
+      title: "О клинике",
     },
     {
       id: id++,
-      url: '#',
-      title: 'Отзывы',
+      url: "#",
+      title: "Отзывы",
     },
     {
       id: id++,
-      url: '#',
-      title: 'Контакты',
+      url: "#",
+      title: "Контакты",
     },
   ];
 
@@ -45,7 +45,6 @@ export default function Header() {
               height="auto"
               alt="Лого"
               className="max-w-[262px] cursor-pointer"
-              priority={true}
             />
           </Link>
 

@@ -1,7 +1,8 @@
-import bannerMain from '@/public/img/main/bannerMain1.png';
-import Image from 'next/image';
-import ButtonFeed from './components/ButtonFeed';
-import Heading from './components/Heading';
+import bannerMain from "@/public/img/main/bannerMain1.png";
+import Image from "next/image";
+import ButtonFeed from "./components/ButtonFeed";
+import Heading from "./components/Heading";
+import SliderMain from "./components/SliderMain";
 
 export default function Home() {
   return (
@@ -25,7 +26,6 @@ export default function Home() {
               height="auto"
               alt="Баннер Фото"
               className="w-[480px] -mb-12 -mt-20"
-              priority={true}
             />
           </div>
         </div>
@@ -74,6 +74,8 @@ export default function Home() {
       <section className="section mt-8 py-10 bg-orange">
         <div className="container mx-auto px-5">
           <Heading style="text-white">Наши специалисты</Heading>
+          <SliderMain />
+          {/* <TrendingSlider /> */}
         </div>
       </section>
 
