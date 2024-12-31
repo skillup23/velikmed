@@ -1,46 +1,18 @@
-import LogoG from "@/public/img/main/logo-g.png";
+import { navLinks } from "@/public/data/data";
+import logo from "@/public/img/main/logo-g.png";
 import Image from "next/image";
 import Link from "next/link";
 import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
 import ButtonFeed from "./ButtonFeed";
 
 export default function Header() {
-  let id = 0;
-  const navLinks = [
-    {
-      id: id++,
-      url: "#",
-      title: "Услуги",
-    },
-    {
-      id: id++,
-      url: "#",
-      title: "Специалисты",
-    },
-    {
-      id: id++,
-      url: "#",
-      title: "О клинике",
-    },
-    {
-      id: id++,
-      url: "#",
-      title: "Отзывы",
-    },
-    {
-      id: id++,
-      url: "#",
-      title: "Контакты",
-    },
-  ];
-
   return (
     <header>
       <div>
         <div className="container mx-auto px-5 flex justify-between items-center">
           <Link href="#">
             <Image
-              src={LogoG}
+              src={logo}
               width="auto"
               height="auto"
               alt="Лого"
@@ -55,7 +27,7 @@ export default function Header() {
           >
             <PiMapPinFill className="text-[30px] text-orange" />
             <p>
-              Краснодар, <br /> ул. Лавочкина 21
+              г. Краснодар, <br /> ул. Лавочкина 21
             </p>
           </a>
           <a
