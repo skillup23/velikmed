@@ -8,8 +8,8 @@ import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <footer className="relative py-10 bg-gray-dark">
-      <div className="container mx-auto px-5">
+    <footer className="py-10 bg-gray-dark">
+      <div className="container mx-auto px-5 relative">
         <div className="w-full flex justify-between">
           <Link href="#">
             <Image
@@ -69,15 +69,15 @@ export default function Footer() {
         </div>
 
         <p className="mt-6 text-white font-medium">©2025 «ВеликМед»</p>
-      </div>
 
-      <Image
-        src={imgFooter}
-        width="auto"
-        height="auto"
-        alt="Красный крестик в круге"
-        className="absolute -top-12 right-[28%] max-w-[160px]"
-      />
+        <Image
+          src={imgFooter}
+          width="auto"
+          height="auto"
+          alt="Красный крестик в круге"
+          className="absolute -top-20 right-[250px] max-w-[160px]"
+        />
+      </div>
     </footer>
   );
 }
