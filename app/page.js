@@ -1,16 +1,16 @@
-import bannerMain from "@/public/img/main/bannerMain1.png";
-import princip from "@/public/img/main/img-princip.png";
-import mapKontact from "@/public/img/main/map.jpg";
-import oKlinike from "@/public/img/main/o-klinike.jpg";
-import yslugi1 from "@/public/img/main/yslugi1.png";
-import yslugi2 from "@/public/img/main/yslugi2.png";
-import yslugi3 from "@/public/img/main/yslugi3.png";
-import yslugi4 from "@/public/img/main/yslugi4.png";
-import Image from "next/image";
-import ButtonFeed from "./components/ButtonFeed";
-import Heading from "./components/Heading";
-import SliderFeedback from "./components/SliderFeedback";
-import SliderMain from "./components/SliderMain";
+import bannerMain from '@/public/img/main/bannerMain1.png';
+import princip from '@/public/img/main/img-princip.png';
+import mapKontact from '@/public/img/main/map.jpg';
+import oKlinike from '@/public/img/main/o-klinike.jpg';
+import yslugi1 from '@/public/img/main/yslugi1.png';
+import yslugi2 from '@/public/img/main/yslugi2.png';
+import yslugi3 from '@/public/img/main/yslugi3.png';
+import yslugi4 from '@/public/img/main/yslugi4.png';
+import Image from 'next/image';
+import ButtonFeed from './components/ButtonFeed';
+import Heading from './components/Heading';
+import SliderFeedback from './components/SliderFeedback';
+import SliderMain from './components/SliderMain';
 
 export default function Home() {
   return (
@@ -18,24 +18,25 @@ export default function Home() {
       {/* ----------------- Первый экран ----------------------- */}
       <section className="section">
         <div className="container mx-auto px-5">
-          <div className="w-full p-12 flex justify-between bg-orange-light rounded-2xl">
-            <div className="w-1/2">
-              <h1 className="font-display">Клиника ВеликМед</h1>
-              <h5 className="mt-3 mb-10 leading-7">
+          <div className="w-full px-4 py-6 sm:p-12 flex flex-col sm:flex-row justify-between bg-orange-light rounded-2xl">
+            <div className="sm:w-1/2">
+              <h1 className="font-display ">Клиника ВеликМЕД</h1>
+              <h5 className="mt-1 sm:mt-3 mb-6 sm:mb-10 leading-5 sm:leading-7">
                 современная клиника
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed />
+              <ButtonFeed style={'hidden sm:block'} />
             </div>
             <Image
               src={bannerMain}
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="w-[480px] -mb-12 -mt-20 ml-12 -mr-12"
+              className="w-[253px] sm:w-[480px] -mb-6 sm:-mb-12 sm:-mt-20 ml-auto sm:ml-12 -mr-3 sm:-mr-12"
             />
           </div>
+          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
         </div>
       </section>
 
@@ -43,8 +44,8 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>Услуги</Heading>
-          <div className="mt-6 grid grid-cols-[453px_262px_357px] gap-6 text-white">
-            <div className="relative p-8 row-span-3 bg-gradient rounded-xl">
+          <div className="mt-3 sm:mt-6 grid grid-cols-1 sm:grid-cols-[453px_262px_357px] gap-6 text-white">
+            <div className="relative p-8 sm:row-span-3 bg-gradient rounded-xl">
               <h4>Прием специалистов</h4>
               <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
                 <li>Терапевт</li>
@@ -65,7 +66,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="relative p-8 row-span-2 bg-gradient rounded-xl">
+            <div className="relative p-8 sm:row-span-2 bg-gradient rounded-xl">
               <h4>Диагностика</h4>
               <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
                 <li>Лаборатория CL</li>
@@ -80,7 +81,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="relative p-8 row-span-2 bg-gradient rounded-xl">
+            <div className="relative p-8 sm:row-span-2 bg-gradient rounded-xl">
               <h4>Хирургия</h4>
               <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
                 <li className="leading-7">
@@ -99,7 +100,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="relative p-8 col-span-2 bg-gradient rounded-xl">
+            <div className="relative p-8 sm:col-span-2 bg-gradient rounded-xl">
               <h4 className="mb-8">
                 Экспертиза временной нетрудоспособности (больничный)
               </h4>

@@ -37,16 +37,16 @@
     @apply bg-white text-[#393939];
   }
   h1 {
-    @apply text-5xl;
+    @apply text-[30px] sm:text-5xl;
   }
   h2 {
-    @apply text-5xl;
+    @apply text-[30px] sm:text-5xl;
   }
   h4 {
     @apply text-[24px] leading-9 font-semibold tracking-[0.02em];
   }
   h5 {
-    @apply text-[20px] leading-5 font-semibold tracking-[0.02em];
+    @apply text-[14px] sm:text-[20px] leading-5 font-semibold tracking-[0.02em];
   }
   h6 {
     @apply text-[18px] leading-5 font-semibold tracking-[0.02em];
@@ -55,7 +55,7 @@
     @apply text-[16px] leading-5 font-semibold tracking-[0.02em];
   }
   .section {
-    @apply mt-[72px];
+    @apply mt-6 sm:mt-[72px];
   }
   .animate-simple {
     @apply transition duration-150 ease-in-out;
@@ -104,4 +104,21 @@
 .alice-carousel__stage-item:nth-child(1 of .__active),
 .alice-carousel__stage-item:nth-last-child(1 of .__active) {
   margin: 0;
+}
+
+/* Гамбургер кнопка хеадер */
+.hamburger-lines {
+  height: 20px;
+  width: 37px;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: #e15225;
 }

@@ -1,29 +1,59 @@
-import { navLinks } from "@/public/data/data";
-import logo from "@/public/img/main/logo-g.png";
-import Image from "next/image";
-import Link from "next/link";
-import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
-import ButtonFeed from "./ButtonFeed";
+'use client';
+
+import { navLinks } from '@/public/data/data';
+import logo from '@/public/img/main/logo-g.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
+import ButtonFeed from './ButtonFeed';
+import BurgerButton from './BurgerButton';
+import { useState } from 'react';
+import MobileNav from './MobileNav';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function openMobileMenu() {
+    setIsOpen(!isOpen);
+
+    const b = document.querySelector('body');
+
+    if (isOpen === false) {
+      b.classList.add('overflow-hidden');
+      b.classList.remove('overflow-auto');
+    } else {
+      b.classList.add('overflow-auto');
+      b.classList.remove('overflow-hidden');
+    }
+  }
+
   return (
     <header>
       <div>
-        <div className="container mx-auto px-5 flex justify-between items-center">
+        <div className="container mx-auto pt-2 pb-1 xl:py-0 px-5 flex justify-between items-center">
           <Link href="#">
             <Image
               src={logo}
               width="auto"
               height="auto"
               alt="Лого"
-              className="max-w-[262px] cursor-pointer"
+              className="w-[145px] xl:w-[262px] cursor-pointer"
             />
           </Link>
+
+          {/* <!-- Бургер меню кнопка --> */}
+          <div
+            onClick={() => {
+              openMobileMenu();
+            }}
+          >
+            <BurgerButton isOpen={isOpen}></BurgerButton>
+          </div>
 
           <a
             href="#"
             target="_blank"
-            className="flex items-center gap-1 hover:opacity-90 animate-simple"
+            className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
           >
             <PiMapPinFill className="text-[30px] text-orange" />
             <p>
@@ -33,25 +63,29 @@ export default function Header() {
           <a
             href="tel:89184706967"
             target="_blank"
-            className="flex items-center gap-1 hover:opacity-90 animate-simple"
+            className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
           >
             <PiPhoneFill className="text-[30px] text-orange" />
             <p className="text-[18px] font-bold">+7 (918) 470-69-67</p>
           </a>
-          <ButtonFeed />
+          <ButtonFeed style="hidden md:block" />
         </div>
       </div>
 
       <div className="bg-gray-dark">
         <div className="container mx-auto px-5">
-          <h6 className="py-[12.5px] text-white text-center tracking-normal">
+          <h6 className="hidden sm:block py-[12.5px] text-white text-center tracking-normal">
             Часы приема: понедельник-пятница с 8:00 до 19:00 | суббота,
             воскресенье с 9:00 до 15:00
+          </h6>
+          <h6 className="block sm:hidden py-[7.5px] text-white text-center tracking-normal text-[12px]">
+            Понедельник-пятница с 8:00 до 19:00 <br /> Суббота, воскресенье с
+            9:00 до 15:00
           </h6>
         </div>
       </div>
 
-      <div className="bg-orange">
+      <div className="bg-orange hidden sm:block">
         <nav className="container h-[74px] mx-auto px-5 flex justify-between items-center">
           {navLinks.map(({ id, url, title }) => {
             return (
@@ -66,6 +100,8 @@ export default function Header() {
           })}
         </nav>
       </div>
+
+      <MobileNav navLinks={navLinks} isOpen={isOpen} />
     </header>
   );
 }

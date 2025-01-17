@@ -1,11 +1,11 @@
-"use client";
-import arroyLeft from "@/public/img/main/arroyLeft.svg";
-import arroyRight from "@/public/img/main/arroyRight.svg";
-import doctor1 from "@/public/img/main/doctor1.png";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+'use client';
+import arroyLeft from '@/public/img/main/arroyLeft.svg';
+import arroyRight from '@/public/img/main/arroyRight.svg';
+import doctor1 from '@/public/img/main/doctor1.png';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const responsive = {
   0: { items: 1 },
@@ -15,7 +15,7 @@ const responsive = {
 
 const items = [
   <div
-    className="item w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
+    className="item w-[99%] sm:w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
     data-value="1"
   >
     <h4>Фамилия Имя Отчество</h4>
@@ -32,7 +32,7 @@ const items = [
     />
   </div>,
   <div
-    className="item w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
+    className="item w-[99%] sm:w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
     data-value="2"
   >
     <h4>Фамилия Имя Отчество</h4>
@@ -49,7 +49,7 @@ const items = [
     />
   </div>,
   <div
-    className="item w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
+    className="item w-[99%] sm:w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
     data-value="3"
   >
     <h4>Фамилия Имя Отчество</h4>
@@ -66,7 +66,7 @@ const items = [
     />
   </div>,
   <div
-    className="item w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
+    className="item w-[99%] sm:w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
     data-value="4"
   >
     <h4>Фамилия Имя Отчество</h4>
@@ -83,7 +83,7 @@ const items = [
     />
   </div>,
   <div
-    className="item w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
+    className="item w-[99%] sm:w-[357px] pt-8 px-6 shrink-0 bg-white rounded-xl overflow-hidden animate-simple"
     data-value="5"
   >
     <h4>Фамилия Имя Отчество</h4>
@@ -156,7 +156,7 @@ export default function SliderMain() {
           </div>
         </div>
       ) : (
-        "Is Server"
+        'Загрузка данных'
       )}
     </>
   );
