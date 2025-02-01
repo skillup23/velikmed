@@ -8,7 +8,7 @@ import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <footer className="py-10 bg-gray-dark">
+    <footer className="py-10 bg-gray-dark hidden sm:block">
       <div className="container mx-auto px-5 relative">
         <div className="w-full flex justify-between">
           <Link href="#">

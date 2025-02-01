@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { navLinks } from '@/public/data/data';
-import logo from '@/public/img/main/logo-g.png';
-import Image from 'next/image';
-import Link from 'next/link';
-import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
-import ButtonFeed from './ButtonFeed';
-import BurgerButton from './BurgerButton';
-import { useState } from 'react';
-import MobileNav from './MobileNav';
+import { navLinks } from "@/public/data/data";
+import logo from "@/public/img/main/logo-g.png";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import BurgerButton from "./BurgerButton";
+import ButtonFeed from "./ButtonFeed";
+import MobileNav from "./MobileNav";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,21 +16,21 @@ export default function Header() {
   function openMobileMenu() {
     setIsOpen(!isOpen);
 
-    const b = document.querySelector('body');
+    const b = document.querySelector("body");
 
     if (isOpen === false) {
-      b.classList.add('overflow-hidden');
-      b.classList.remove('overflow-auto');
+      b.classList.add("overflow-hidden");
+      b.classList.remove("overflow-auto");
     } else {
-      b.classList.add('overflow-auto');
-      b.classList.remove('overflow-hidden');
+      b.classList.add("overflow-auto");
+      b.classList.remove("overflow-hidden");
     }
   }
 
   return (
     <header>
       <div>
-        <div className="container mx-auto pt-2 pb-1 xl:py-0 px-5 flex justify-between items-center">
+        <div className="container mx-auto pt-[6px] pb-[3px] xl:py-0 px-5 flex justify-between items-center">
           <Link href="#">
             <Image
               src={logo}

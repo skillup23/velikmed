@@ -1,16 +1,14 @@
-import bannerMain from '@/public/img/main/bannerMain1.png';
-import princip from '@/public/img/main/img-princip.png';
-import mapKontact from '@/public/img/main/map.jpg';
-import oKlinike from '@/public/img/main/o-klinike.jpg';
-import yslugi1 from '@/public/img/main/yslugi1.png';
-import yslugi2 from '@/public/img/main/yslugi2.png';
-import yslugi3 from '@/public/img/main/yslugi3.png';
-import yslugi4 from '@/public/img/main/yslugi4.png';
-import Image from 'next/image';
-import ButtonFeed from './components/ButtonFeed';
-import Heading from './components/Heading';
-import SliderFeedback from './components/SliderFeedback';
-import SliderMain from './components/SliderMain';
+import bannerMain from "@/public/img/main/bannerMain1.png";
+import princip from "@/public/img/main/img-princip.png";
+import mapKontact from "@/public/img/main/map.jpg";
+import oKlinike from "@/public/img/main/o-klinike.jpg";
+import Image from "next/image";
+import ButtonFeed from "./components/ButtonFeed";
+import Heading from "./components/Heading";
+import Princips from "./components/Princips";
+import SliderFeedback from "./components/SliderFeedback";
+import SliderMain from "./components/SliderMain";
+import UslugiMain from "./components/UslugiMain";
 
 export default function Home() {
   return (
@@ -26,7 +24,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={'hidden sm:block'} />
+              <ButtonFeed style={"hidden sm:block"} />
             </div>
             <Image
               src={bannerMain}
@@ -36,7 +34,7 @@ export default function Home() {
               className="w-[253px] sm:w-[480px] -mb-6 sm:-mb-12 sm:-mt-20 ml-auto sm:ml-12 -mr-3 sm:-mr-12"
             />
           </div>
-          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
+          <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
         </div>
       </section>
 
@@ -44,75 +42,7 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>Услуги</Heading>
-          <div className="mt-3 sm:mt-6 grid grid-cols-1 sm:grid-cols-[453px_262px_357px] gap-6 text-white">
-            <div className="relative p-8 sm:row-span-3 bg-gradient rounded-xl">
-              <h4>Прием специалистов</h4>
-              <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
-                <li>Терапевт</li>
-                <li>Педиатр</li>
-                <li>Эндокринолог</li>
-                <li>Гастроэнтеролог</li>
-                <li>Невролог</li>
-                <li>Кардиолог</li>
-                <li>Онколог</li>
-                <li>Гинеколог</li>
-              </ul>
-              <Image
-                src={yslugi1}
-                width="auto"
-                height="auto"
-                alt="Услуги"
-                className="w-[177px] absolute bottom-2 right-3"
-              />
-            </div>
-
-            <div className="relative p-8 sm:row-span-2 bg-gradient rounded-xl">
-              <h4>Диагностика</h4>
-              <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
-                <li>Лаборатория CL</li>
-                <li>УЗИ</li>
-              </ul>
-              <Image
-                src={yslugi2}
-                width="auto"
-                height="auto"
-                alt="Услуги"
-                className="w-[64px] absolute bottom-6 right-8"
-              />
-            </div>
-
-            <div className="relative p-8 sm:row-span-2 bg-gradient rounded-xl">
-              <h4>Хирургия</h4>
-              <ul className="mt-6 flex flex-col gap-5 text-[20px] leading-6 font-medium tracking-wide">
-                <li className="leading-7">
-                  Малоинвазивная <br /> хирургия
-                </li>
-                <li className="mb-7 leading-7">
-                  Эстетическая <br /> гинекология
-                </li>
-              </ul>
-              <Image
-                src={yslugi3}
-                width="auto"
-                height="auto"
-                alt="Услуги"
-                className="w-[221px] absolute bottom-0 right-0"
-              />
-            </div>
-
-            <div className="relative p-8 sm:col-span-2 bg-gradient rounded-xl">
-              <h4 className="mb-8">
-                Экспертиза временной нетрудоспособности (больничный)
-              </h4>
-              <Image
-                src={yslugi4}
-                width="auto"
-                height="auto"
-                alt="Услуги"
-                className="w-[107px] absolute bottom-0 right-0"
-              />
-            </div>
-          </div>
+          <UslugiMain />
         </div>
       </section>
 
@@ -120,46 +50,15 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>Наши принципы</Heading>
-          <div className="flex">
-            <ul className="mt-8 mr-[71px] flex flex-col gap-6">
-              <li className="h-[77px] flex gap-[22px] items-center">
-                <p className="w-[88px] font-display font-normal text-[64px] text-orange">
-                  01
-                </p>
-                <h4>Доказательный подход</h4>
-              </li>
-              <li className="h-[77px] flex gap-[22px] items-center">
-                <p className="w-[88px] font-display font-normal text-[64px] text-orange">
-                  02
-                </p>
-                <h4>Высокий экспертный уровень врачей</h4>
-              </li>
-              <li className="h-[77px] flex gap-[22px] items-center">
-                <p className="w-[88px] font-display font-normal text-[64px] text-orange">
-                  03
-                </p>
-                <h4>Врачи всегда на стороне пациента</h4>
-              </li>
-              <li className="h-[77px] flex gap-[22px] items-center">
-                <p className="w-[88px] font-display font-normal text-[64px] text-orange">
-                  04
-                </p>
-                <h4>Соблюдение медицинской этики</h4>
-              </li>
-              <li className="h-[77px] flex gap-[22px] items-center">
-                <p className="w-[88px] font-display font-normal text-[64px] text-orange">
-                  05
-                </p>
-                <h4>Сервис со вниманием к деталям</h4>
-              </li>
-            </ul>
+          <div className="flex flex-col sm:flex-row">
+            <Princips />
 
             <Image
               src={princip}
               width="auto"
               height="auto"
               alt="Фонендоскоп"
-              className="w-[425px] -mt-12 -mb-14"
+              className="w-[140px] sm:w-[425px] mt-6 sm:-mt-12 -mb-10 sm:-mb-14 mx-auto"
             />
           </div>
         </div>
@@ -179,19 +78,19 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>О клинике</Heading>
-          <div className="w-full mt-8 flex bg-gray-dark rounded-xl overflow-hidden gap-10">
-            <div className="w-1/2 p-10 pr-0 text-white">
-              <h6 className="mb-8 text-[19px] font-medium leading-7">
+          <div className="w-full mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-10">
+            <div className="sm:w-1/2 pt-4 pb-6 px-6 sm:p-10 pr-0 text-white bg-gray-dark">
+              <h6 className="mb-8 text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
                 Клиника ВеликМед — это современное медицинское учреждение,
                 предлагающее широкий спектр услуг в области диагностики, лечения
                 и профилактики заболеваний.
               </h6>
-              <h6 className="mb-8 text-[19px] font-medium leading-7">
+              <h6 className="mb-8 text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
                 В клинике работают высококвалифицированные специалисты, которые
                 используют передовые методы и технологии для обеспечения
                 качественного и эффективного обслуживания пациентов.
               </h6>
-              <h6 className="text-[19px] font-medium leading-7">
+              <h6 className="text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
                 Клиника оснащена современным оборудованием, которое позволяет
                 проводить диагностику и лечение на высоком уровне.
               </h6>
@@ -202,7 +101,7 @@ export default function Home() {
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="w-1/2 h-full"
+              className="w-full -mb-28 sm:mb-0 sm:w-1/2 h-full"
               priority
             />
           </div>

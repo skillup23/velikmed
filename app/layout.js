@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="ru"
-      className={`${roboto.variable} ${Manrope.className} ${MAK.className} font-sans`}
+      className={`${roboto.variable} ${MAK.className} ${Manrope.className} font-sans`}
     >
       <body>
         <Header />

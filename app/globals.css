@@ -1,6 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-blue: #1fb6ff;
+  --color-purple: #7e5bef;
+  --color-pink: #ff49db;
+  --color-orange: #e15225;
+  --color-orange-dark: #b04623;
+  --color-orange-light: #f9e1da;
+  --color-green: #13ce66;
+  --color-yellow: #ffc82c;
+  --color-gray-dark: #404040;
+  --color-gray: #8492a6;
+  --color-gray-light: #d3dce6;
+
+  --font-sans: Manrope, Roboto, sans-serif;
+  --font-display: MAK, Arial, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @layer base {
   /* @font-face {
@@ -34,7 +67,7 @@
     src: url(/app/fonts/mak/MAK-bold.woff) format('woff');
   } */
   body {
-    @apply bg-white text-[#393939];
+    @apply bg-white text-[#393939] font-sans;
   }
   h1 {
     @apply text-[30px] sm:text-5xl;
@@ -43,7 +76,7 @@
     @apply text-[30px] sm:text-5xl;
   }
   h4 {
-    @apply text-[24px] leading-9 font-semibold tracking-[0.02em];
+    @apply text-[16px] sm:text-[24px] leading-9 font-semibold tracking-[0.02em];
   }
   h5 {
     @apply text-[14px] sm:text-[20px] leading-5 font-semibold tracking-[0.02em];
@@ -55,10 +88,16 @@
     @apply text-[16px] leading-5 font-semibold tracking-[0.02em];
   }
   .section {
-    @apply mt-6 sm:mt-[72px];
+    @apply mt-8 sm:mt-[72px];
   }
   .animate-simple {
     @apply transition duration-150 ease-in-out;
+  }
+  .uslugi_card {
+    @apply relative px-8 pt-5 pb-8 sm:p-8 rounded-xl;
+  }
+  .uslugi_list {
+    @apply mt-4 sm:mt-6 flex flex-col gap-[18px] sm:gap-5 text-[14px] sm:text-[20px] leading-6 font-medium tracking-wide;
   }
 }
 
