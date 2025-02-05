@@ -15,7 +15,7 @@ const responsive = {
 
 const items = [
   <div
-    className="item w-[357px] shrink-0 rounded-xl overflow-hidden"
+    className="item w-[99%] sm:w-[357px] shrink-0 rounded-xl overflow-hidden"
     data-value="1"
   >
     <h6 className="p-6 text-white bg-orange">Емильянова Екатерина</h6>
@@ -51,7 +51,7 @@ const items = [
     </div>
   </div>,
   <div
-    className="item w-[357px] shrink-0 rounded-xl overflow-hidden"
+    className="item w-[99%] sm:w-[357px] shrink-0 rounded-xl overflow-hidden"
     data-value="2"
   >
     <h6 className="p-6 text-white bg-orange">Филякова Маргарита</h6>
@@ -89,7 +89,7 @@ const items = [
     </div>
   </div>,
   <div
-    className="item w-[357px] shrink-0 rounded-xl overflow-hidden"
+    className="item w-[99%] sm:w-[357px] shrink-0 rounded-xl overflow-hidden"
     data-value="3"
   >
     <h6 className="p-6 text-white bg-orange">Котлярова Елена</h6>
@@ -122,7 +122,7 @@ const items = [
     </div>
   </div>,
   <div
-    className="item w-[357px] shrink-0 rounded-xl overflow-hidden"
+    className="item w-[99%] sm:w-[357px] shrink-0 rounded-xl overflow-hidden"
     data-value="4"
   >
     <h6 className="p-6 text-white bg-orange">Емильянова Екатерина</h6>
@@ -158,7 +158,7 @@ const items = [
     </div>
   </div>,
   <div
-    className="item w-[357px] shrink-0 rounded-xl overflow-hidden"
+    className="item w-[99%] sm:w-[357px] shrink-0 rounded-xl overflow-hidden"
     data-value="5"
   >
     <h6 className="p-6 text-white bg-orange">Емильянова Екатерина</h6>
@@ -207,7 +207,7 @@ export default function SliderFeedback() {
   return (
     <>
       {isClient ? (
-        <div className="relative mt-8">
+        <div className="relative mt-4 sm:mt-8">
           <AliceCarousel
             key="carousel"
             mouseTracking
@@ -227,7 +227,7 @@ export default function SliderFeedback() {
           </nav>
           <div
             key="btns"
-            className="b-refs-buttons flex absolute -top-[86px] right-0 gap-[67px]"
+            className="b-refs-buttons flex absolute -top-[66px] sm:-top-[86px] right-0 gap-[67px]"
           >
             <button onClick={(e) => carousel?.current?.slidePrev(e)}>
               <Image

@@ -56,4 +56,30 @@ const princips = [
   },
 ];
 
-export { navLinks, princips };
+import doctorImg from "@/public/img/main/doctor1.png";
+
+const doctors = [
+  {
+    id: id++,
+    fio: "Фамилия Имя Отчество",
+    spec: "эндокринолог",
+    workYear: "стаж 12 лет",
+    foto: doctorImg,
+  },
+  {
+    id: id++,
+    fio: "Фамилия Имя Отчество",
+    spec: "кардиолог",
+    workYear: "стаж 17 лет",
+    foto: doctorImg,
+  },
+  {
+    id: id++,
+    fio: "Фамилия Имя Отчество",
+    spec: "гастроэнтеролог",
+    workYear: "стаж 8 лет",
+    foto: doctorImg,
+  },
+];
+
+export { doctors, navLinks, princips };

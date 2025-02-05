@@ -31,7 +31,7 @@ export default function MobileNav({ navLinks, isOpen }) {
       />
 
       <div className="text-white">
-        <div className="mt-[127px] mx-auto flex w-full items-center justify-center gap-2">
+        <div className="mt-[100px] mx-auto flex w-full items-center justify-center gap-2">
           <PiMapPinFill className="text-[32px] " />
           <p>Краснодар, ул. Лавочкина 21</p>
         </div>

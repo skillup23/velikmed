@@ -1,13 +1,15 @@
 import bannerMain from "@/public/img/main/bannerMain1.png";
+import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
+import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
 import princip from "@/public/img/main/img-princip.png";
 import mapKontact from "@/public/img/main/map.jpg";
 import oKlinike from "@/public/img/main/o-klinike.jpg";
 import Image from "next/image";
 import ButtonFeed from "./components/ButtonFeed";
+import Doctors from "./components/Doctors";
 import Heading from "./components/Heading";
 import Princips from "./components/Princips";
 import SliderFeedback from "./components/SliderFeedback";
-import SliderMain from "./components/SliderMain";
 import UslugiMain from "./components/UslugiMain";
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
       {/* ----------------- Первый экран ----------------------- */}
       <section className="section">
         <div className="container mx-auto px-5">
-          <div className="w-full px-4 py-6 sm:p-12 flex flex-col sm:flex-row justify-between bg-orange-light rounded-2xl">
+          <div className="relative w-full px-4 py-6 sm:p-12 flex flex-col sm:flex-row justify-between bg-gradient_second rounded-2xl">
             <div className="sm:w-1/2">
               <h1 className="font-display ">Клиника ВеликМЕД</h1>
               <h5 className="mt-1 sm:mt-3 mb-6 sm:mb-10 leading-5 sm:leading-7">
@@ -31,7 +33,21 @@ export default function Home() {
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="w-[253px] sm:w-[480px] -mb-6 sm:-mb-12 sm:-mt-20 ml-auto sm:ml-12 -mr-3 sm:-mr-12"
+              className="w-[253px] sm:w-[480px] -mb-6 sm:-mb-12 sm:-mt-20 ml-auto sm:ml-12 -mr-3 sm:-mr-12 z-10"
+            />
+            <Image
+              src={bannerMainFon}
+              width="auto"
+              height="auto"
+              alt="Баннер Фото"
+              className="hidden sm:block absolute right-0 bottom-0"
+            />
+            <Image
+              src={bannerMainFonMob}
+              width="auto"
+              height="auto"
+              alt="Баннер Фото"
+              className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
           <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
@@ -65,12 +81,17 @@ export default function Home() {
       </section>
 
       {/* ----------------- Наши специалисты ----------------------- */}
-      <section className="section relative mt-8 py-10 bg-gradient rounded-2xl z-10">
+      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10">
         <div className="container mx-auto px-5">
-          <Heading style="text-white">Наши специалисты</Heading>
-          <SliderMain />
+          {/* <div className="hidden sm:block">
+            <Heading style="text-white">Наши специалисты</Heading>
+            <SliderMain />
+          </div> */}
 
-          {/* <TrendingSlider /> */}
+          <div className="p-6 sm:p-10 bg-gradient1 rounded-xl">
+            <Heading style="text-white">Наши специалисты</Heading>
+            <Doctors />
+          </div>
         </div>
       </section>
 
@@ -78,7 +99,7 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>О клинике</Heading>
-          <div className="w-full mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-10">
+          <div className="w-full mt-6 sm:mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-10">
             <div className="sm:w-1/2 pt-4 pb-6 px-6 sm:p-10 pr-0 text-white bg-gray-dark">
               <h6 className="mb-8 text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
                 Клиника ВеликМед — это современное медицинское учреждение,
@@ -120,29 +141,29 @@ export default function Home() {
       <section className="section mb-[72px]">
         <div className="container mx-auto px-5">
           <Heading>Контакты</Heading>
-          <div className="w-full mt-8 p-10 flex bg-orange rounded-xl overflow-hidden gap-[68px]">
-            <ul className="w-full flex flex-col text-white gap-10">
+          <div className="w-full mt-6 sm:mt-8 p-6 sm:p-10 flex flex-col sm:flex-row bg-orange rounded-xl overflow-hidden gap-8 sm:gap-[58px]">
+            <ul className="w-full flex flex-col text-white gap-4 sm:gap-10">
               <li className="flex justify-between">
-                <h4>Телефон</h4>
-                <h4>+7 918 470-69-67</h4>
+                <h4 className="text-gray-dark sm:text-white">Телефон</h4>
+                <h4 className="w-[150px] sm:w-[225px]">+7 918 470-69-67</h4>
               </li>
               <li className="flex justify-between">
-                <h4>Email</h4>
-                <h4>info@velikmed.ru</h4>
+                <h4 className="text-gray-dark sm:text-white">Email</h4>
+                <h4 className="w-[150px] sm:w-[225px]">info@velikmed.ru</h4>
               </li>
               <li className="flex justify-between">
-                <h4>Адрес</h4>
-                <h4>
+                <h4 className="text-gray-dark sm:text-white">Адрес</h4>
+                <h4 className="w-[150px] sm:w-[225px] leading-6 sm:leading-9">
                   г. Краснодар, <br />
                   ул. Лавочкина, 21
                 </h4>
               </li>
               <li className="flex justify-between">
-                <h4>
+                <h4 className="text-gray-dark sm:text-white leading-6 sm:leading-9">
                   Время <br />
                   работы
                 </h4>
-                <h4>
+                <h4 className="w-[150px] sm:w-[225px] leading-6 sm:leading-9">
                   пн-пт 8:00-19:00 <br />
                   сб, вс 9:00-15:00
                 </h4>
@@ -153,7 +174,7 @@ export default function Home() {
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="max-w-[603px] h-full rounded-xl"
+              className="w-full sm:max-w-[603px] h-[271px] sm:h-full object-cover rounded-xl"
             />
           </div>
         </div>

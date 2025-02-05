@@ -121,6 +121,15 @@
     #e15225;
 }
 
+.bg-gradient_second {
+  background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0) 17.12%,
+      rgba(225, 82, 37, 0.85) 100%
+    ),
+    #f9e1da;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   background-color: #fff;
@@ -160,4 +169,30 @@
   width: 100%;
   border-radius: 10px;
   background: #e15225;
+}
+
+.bg-gradient1 {
+  background: rgba(0, 0, 0, 0);
+}
+.bg-gradient2 {
+  background: linear-gradient(
+      146.64deg,
+      rgba(225, 82, 37, 0.75) 10.96%,
+      rgba(255, 255, 255, 0.75) 95.38%
+    ),
+    #e15225;
+}
+
+@media (max-width: 768px) {
+  .bg-gradient1 {
+    background: linear-gradient(
+        146.64deg,
+        rgba(225, 82, 37, 0.75) 10.96%,
+        rgba(255, 255, 255, 0.75) 95.38%
+      ),
+      #e15225;
+  }
+  .bg-gradient2 {
+    background: white;
+  }
 }

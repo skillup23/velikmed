@@ -2,7 +2,7 @@ import { princips } from "@/public/data/data";
 
 export default function Princips() {
   return (
-    <ul className="mt-8 sm:mr-[71px] flex flex-col gap-6">
+    <ul className="mt-6 sm:mt-8 sm:mr-[71px] flex flex-col gap-6">
       {princips.map(({ id, number, text }) => {
         return (
           <li

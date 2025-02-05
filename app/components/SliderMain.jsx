@@ -1,11 +1,11 @@
-'use client';
-import arroyLeft from '@/public/img/main/arroyLeft.svg';
-import arroyRight from '@/public/img/main/arroyRight.svg';
-import doctor1 from '@/public/img/main/doctor1.png';
-import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+"use client";
+import arroyLeft from "@/public/img/main/arroyLeft.svg";
+import arroyRight from "@/public/img/main/arroyRight.svg";
+import doctor1 from "@/public/img/main/doctor1.png";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const responsive = {
   0: { items: 1 },
@@ -156,7 +156,7 @@ export default function SliderMain() {
           </div>
         </div>
       ) : (
-        'Загрузка данных'
+        "Загрузка данных"
       )}
     </>
   );
