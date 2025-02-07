@@ -51,7 +51,7 @@ export default function Header() {
           </div>
 
           <a
-            href="#"
+            href="https://yandex.ru/maps/-/CHqAJMJV"
             target="_blank"
             className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
           >
@@ -61,12 +61,12 @@ export default function Header() {
             </p>
           </a>
           <a
-            href="tel:89184706967"
+            href="tel:89182468877"
             target="_blank"
             className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
           >
             <PiPhoneFill className="text-[30px] text-orange" />
-            <p className="text-[18px] font-bold">+7 (918) 470-69-67</p>
+            <p className="text-[18px] font-bold">+7 (918) 246-88-77</p>
           </a>
           <ButtonFeed style="hidden md:block" />
         </div>

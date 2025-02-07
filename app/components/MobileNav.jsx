@@ -31,16 +31,23 @@ export default function MobileNav({ navLinks, isOpen }) {
       />
 
       <div className="text-white">
-        <div className="mt-[100px] mx-auto flex w-full items-center justify-center gap-2">
+        <Link
+          href="https://yandex.ru/maps/-/CHqAJMJV"
+          target="_blank"
+          className="mt-[100px] mx-auto flex w-full items-center justify-center gap-2"
+        >
           <PiMapPinFill className="text-[32px] " />
           <p>Краснодар, ул. Лавочкина 21</p>
-        </div>
-        <div className="mt-[13px] flex w-full items-center justify-center gap-2">
+        </Link>
+        <Link
+          href="tel:89182468877"
+          className="mt-[13px] flex w-full items-center justify-center gap-2"
+        >
           <PiPhoneFill className="text-[32px]" />
-          <p className="text-[18px]">+7 (918) 470-69-67</p>
-        </div>
+          <p className="text-[18px]">+7 (918) 246-88-77</p>
+        </Link>
 
-        <p className="mt-8 text-center text-[12px]">
+        <p className="mt-8 text-center text-[14px]">
           Часы приема: <br />
           понедельник-пятница 8:00 - 19:00
           <br /> суббота, воскресенье 9:00 - 15:00

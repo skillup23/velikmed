@@ -17,7 +17,7 @@ export default function Footer() {
               width="auto"
               height="auto"
               alt="Лого"
-              className="w-[209px] sm:w-[286px] cursor-pointer rounded-lg"
+              className="w-[209px] sm:w-[286px] mt-0 sm:-mt-4 cursor-pointer rounded-lg"
             />
           </Link>
 
@@ -47,13 +47,13 @@ export default function Footer() {
               </p>
             </a>
             <a
-              href="tel:89184706967"
+              href="tel:89182468877"
               target="_blank"
               className="flex items-center gap-[10px]  hover:opacity-90 animate-simple"
             >
               <PiPhoneFill className="text-[35px] sm:text-[40px] text-orange" />
               <p className="text-[14px] sm:text-[18px] font-semibold leading-6 sm:leading-7">
-                +7 (918) 470-69-67
+                +7 (918) 246-88-77
               </p>
             </a>
             <a

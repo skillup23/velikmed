@@ -99,19 +99,19 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>О клинике</Heading>
-          <div className="w-full mt-6 sm:mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-10">
+          <div className="w-full mt-6 sm:mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-9">
             <div className="sm:w-1/2 pt-4 pb-6 px-6 sm:p-10 pr-0 text-white bg-gray-dark">
-              <h6 className="mb-8 text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
+              <h6 className="mb-8 text-[14px] sm:text-[18px] font-medium leading-7 text-balance">
                 Клиника ВеликМед — это современное медицинское учреждение,
                 предлагающее широкий спектр услуг в области диагностики, лечения
                 и профилактики заболеваний.
               </h6>
-              <h6 className="mb-8 text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
+              <h6 className="mb-8 text-[14px] sm:text-[18px] font-medium leading-7 ">
                 В клинике работают высококвалифицированные специалисты, которые
                 используют передовые методы и технологии для обеспечения
                 качественного и эффективного обслуживания пациентов.
               </h6>
-              <h6 className="text-[14px] sm:text-[19px] font-medium leading-7 text-balance">
+              <h6 className="text-[14px] sm:text-[18px] font-medium leading-7 ">
                 Клиника оснащена современным оборудованием, которое позволяет
                 проводить диагностику и лечение на высоком уровне.
               </h6>
@@ -145,7 +145,7 @@ export default function Home() {
             <ul className="w-full flex flex-col text-white gap-4 sm:gap-10">
               <li className="flex justify-between">
                 <h4 className="text-gray-dark sm:text-white">Телефон</h4>
-                <h4 className="w-[150px] sm:w-[225px]">+7 918 470-69-67</h4>
+                <h4 className="w-[150px] sm:w-[225px]">+7 918 246-88-77</h4>
               </li>
               <li className="flex justify-between">
                 <h4 className="text-gray-dark sm:text-white">Email</h4>
