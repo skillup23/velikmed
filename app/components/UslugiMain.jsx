@@ -1,13 +1,13 @@
-import yslugi1 from "@/public/img/main/yslugi1.png";
-import yslugi2 from "@/public/img/main/yslugi2.png";
-import yslugi3 from "@/public/img/main/yslugi3.png";
-import yslugi4 from "@/public/img/main/yslugi4.png";
-import Image from "next/image";
+import yslugi1 from '@/public/img/main/yslugi1.png';
+import yslugi2 from '@/public/img/main/yslugi2.png';
+import yslugi3 from '@/public/img/main/yslugi3.png';
+import yslugi4 from '@/public/img/main/yslugi4.png';
+import Image from 'next/image';
 
 export default function UslugiMain() {
   return (
     <div className="mt-3 sm:mt-6 grid grid-cols-1 sm:grid-cols-[453px_262px_357px] gap-6 text-white">
-      <div className="uslugi_card sm:row-span-3 bg-gradient">
+      <div className="uslugi_card sm:row-span-2 bg-gradient">
         <h4>Прием специалистов</h4>
         <ul className="uslugi_list">
           <li>Терапевт</li>
@@ -18,32 +18,34 @@ export default function UslugiMain() {
           <li>Кардиолог</li>
           <li>Онколог</li>
           <li>Гинеколог</li>
+          <li>Хирург</li>
+          <li>Косметолог</li>
         </ul>
         <Image
           src={yslugi1}
           width="auto"
           height="auto"
           alt="Услуги"
-          className="w-[177px] absolute bottom-2 right-3"
+          className="w-[177px] absolute bottom-0 right-3"
         />
       </div>
 
-      <div className="uslugi_card sm:row-span-2 bg-gradient">
-        <h4>Диагностика</h4>
+      <div className="uslugi_card sm:row-span-1 bg-gradient">
+        <h4>Педиатрия</h4>
         <ul className="uslugi_list">
-          <li>Лаборатория CL</li>
-          <li>УЗИ</li>
+          <li>Детский гастроэнтеролог</li>
+          <li>Детский невролог</li>
         </ul>
-        <Image
+        {/* <Image
           src={yslugi2}
           width="auto"
           height="auto"
           alt="Услуги"
           className="w-[64px] absolute bottom-6 right-8"
-        />
+        /> */}
       </div>
 
-      <div className="uslugi_card sm:row-span-2 bg-gradient">
+      <div className="uslugi_card sm:row-span-1 bg-gradient">
         <h4>Хирургия</h4>
         <ul className="uslugi_list">
           <li className="leading-7">
@@ -62,7 +64,22 @@ export default function UslugiMain() {
         />
       </div>
 
-      <div className="uslugi_card sm:col-span-2 bg-gradient">
+      <div className="uslugi_card sm:row-span-1 bg-gradient">
+        <h4>Диагностика</h4>
+        <ul className="uslugi_list">
+          <li>Лаборатория CL</li>
+          <li>УЗИ</li>
+        </ul>
+        <Image
+          src={yslugi2}
+          width="auto"
+          height="auto"
+          alt="Услуги"
+          className="w-[64px] absolute bottom-6 right-8"
+        />
+      </div>
+
+      <div className="uslugi_card sm:row-span-1 bg-gradient">
         <h4 className="sm:mb-8">
           Экспертиза временной нетрудоспособности (больничный)
         </h4>

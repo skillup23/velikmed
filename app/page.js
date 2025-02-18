@@ -1,16 +1,16 @@
-import bannerMain from "@/public/img/main/bannerMain1.png";
-import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
-import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
-import princip from "@/public/img/main/img-princip.png";
-import mapKontact from "@/public/img/main/map.jpg";
-import oKlinike from "@/public/img/main/o-klinike.jpg";
-import Image from "next/image";
-import ButtonFeed from "./components/ButtonFeed";
-import Doctors from "./components/Doctors";
-import Heading from "./components/Heading";
-import Princips from "./components/Princips";
-import SliderFeedback from "./components/SliderFeedback";
-import UslugiMain from "./components/UslugiMain";
+import bannerMain from '@/public/img/main/bannerMain1.png';
+import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
+import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
+import princip from '@/public/img/main/img-princip.png';
+import mapKontact from '@/public/img/main/map.jpg';
+import oKlinike from '@/public/img/main/o-klinike.jpg';
+import Image from 'next/image';
+import ButtonFeed from './components/ButtonFeed';
+import Doctors from './components/Doctors';
+import Heading from './components/Heading';
+import Princips from './components/Princips';
+import SliderFeedback from './components/SliderFeedback';
+import UslugiMain from './components/UslugiMain';
 
 export default function Home() {
   return (
@@ -20,20 +20,22 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="relative w-full px-4 py-6 sm:p-12 flex flex-col sm:flex-row justify-between bg-gradient_second rounded-2xl">
             <div className="sm:w-1/2">
-              <h1 className="font-display ">Клиника ВеликМЕД</h1>
-              <h5 className="mt-1 sm:mt-3 mb-6 sm:mb-10 leading-5 sm:leading-7">
+              <h1 className="font-display">Клиника ВеликМЕД</h1>
+              <h5 className="mt-1 sm:mt-3 mb-5 sm:mb-10 leading-5 sm:leading-7">
                 современная клиника
+                <br />
+                доктора Великжаниной
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={"hidden sm:block"} />
+              <ButtonFeed style={'hidden sm:block'} />
             </div>
             <Image
               src={bannerMain}
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="w-[253px] sm:w-[480px] -mb-6 sm:-mb-12 sm:-mt-20 ml-auto sm:ml-12 -mr-3 sm:-mr-12 z-10"
+              className="w-[253px] sm:w-[453px] -mb-6 sm:-mb-12 sm:-mt-22 ml-auto sm:ml-12 -mr-3 sm:-mr-12 z-10"
             />
             <Image
               src={bannerMainFon}
@@ -50,7 +52,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
+          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
         </div>
       </section>
 
@@ -81,14 +83,14 @@ export default function Home() {
       </section>
 
       {/* ----------------- Наши специалисты ----------------------- */}
-      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10">
+      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10 rounded-3xl">
         <div className="container mx-auto px-5">
           {/* <div className="hidden sm:block">
             <Heading style="text-white">Наши специалисты</Heading>
             <SliderMain />
           </div> */}
 
-          <div className="p-6 sm:p-10 bg-gradient1 rounded-xl">
+          <div className="bg-gradient1 rounded-xl">
             <Heading style="text-white">Наши специалисты</Heading>
             <Doctors />
           </div>
