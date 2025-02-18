@@ -1,16 +1,16 @@
-import bannerMain from '@/public/img/main/bannerMain1.png';
-import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
-import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
-import princip from '@/public/img/main/img-princip.png';
-import mapKontact from '@/public/img/main/map.jpg';
-import oKlinike from '@/public/img/main/o-klinike.jpg';
-import Image from 'next/image';
-import ButtonFeed from './components/ButtonFeed';
-import Doctors from './components/Doctors';
-import Heading from './components/Heading';
-import Princips from './components/Princips';
-import SliderFeedback from './components/SliderFeedback';
-import UslugiMain from './components/UslugiMain';
+import bannerMain from "@/public/img/main/bannerMain1.png";
+import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
+import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
+import princip from "@/public/img/main/img-princip.png";
+import mapKontact from "@/public/img/main/map.jpg";
+import oKlinike from "@/public/img/main/o-klinike2.jpg";
+import Image from "next/image";
+import ButtonFeed from "./components/ButtonFeed";
+import Doctors from "./components/Doctors";
+import Heading from "./components/Heading";
+import Princips from "./components/Princips";
+import SliderFeedback from "./components/SliderFeedback";
+import UslugiMain from "./components/UslugiMain";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={'hidden sm:block'} />
+              <ButtonFeed style={"hidden sm:block"} />
             </div>
             <Image
               src={bannerMain}
@@ -52,7 +52,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
+          <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
         </div>
       </section>
 
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* ----------------- Наши специалисты ----------------------- */}
-      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10 rounded-3xl">
+      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10 rounded-3xl animate-simple">
         <div className="container mx-auto px-5">
           {/* <div className="hidden sm:block">
             <Heading style="text-white">Наши специалисты</Heading>
@@ -103,12 +103,12 @@ export default function Home() {
           <Heading>О клинике</Heading>
           <div className="w-full mt-6 sm:mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-9">
             <div className="sm:w-1/2 pt-4 pb-6 px-6 sm:p-10 pr-0 text-white bg-gray-dark">
-              <h6 className="mb-8 text-[14px] sm:text-[18px] font-medium leading-7 text-balance">
+              <h6 className="mb-6 text-[14px] sm:text-[18px] font-medium leading-7 text-balance">
                 Клиника ВеликМед — это современное медицинское учреждение,
                 предлагающее широкий спектр услуг в области диагностики, лечения
                 и профилактики заболеваний.
               </h6>
-              <h6 className="mb-8 text-[14px] sm:text-[18px] font-medium leading-7 ">
+              <h6 className="mb-6 text-[14px] sm:text-[18px] font-medium leading-7 ">
                 В клинике работают высококвалифицированные специалисты, которые
                 используют передовые методы и технологии для обеспечения
                 качественного и эффективного обслуживания пациентов.

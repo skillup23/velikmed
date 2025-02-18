@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { doctors } from '@/public/data/data';
-import Image from 'next/image';
-import { useState } from 'react';
+import { doctors } from "@/public/data/data";
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Doctors() {
   const [isDoctors, setIsDoctors] = useState(doctors.slice(0, 3));
@@ -22,12 +22,12 @@ export default function Doctors() {
 
   return (
     <div className="flex flex-col">
-      <div className="mt-6 grid grid-cols-3 gap-6">
+      <div className="mt-6 grid grid-cols-3 gap-6 animate-simple">
         {isDoctors.map(({ id, fio, spec, workYear, foto }) => {
           return (
             <div
               key={id}
-              className="pt-8 px-6 flex flex-col items-start justify-between bg-white rounded-xl overflow-hidden gap-3"
+              className="pt-8 px-6 flex flex-col items-start justify-between bg-white rounded-xl overflow-hidden gap-3 animate-simple"
             >
               <h4>{fio}</h4>
               <h6 className="my-auto py-2 px-[18px] text-orange border border-orange rounded-2xl inline-block">
