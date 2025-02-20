@@ -61,12 +61,12 @@ export default function Footer() {
 
           <div className="mt-8 sm:mt-0 sm:-ml-10 flex flex-col justify-between text-white gap-3 sm:gap-7">
             <a
-              href="#"
+              href="https://yandex.ru/maps/-/CHqAJMJV"
               target="_blank"
               className="flex items-center gap-[10px] hover:opacity-90 animate-simple"
             >
               <PiMapPinFill className="text-[35px] sm:text-[40px] text-orange" />
-              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-gray-light sm:leading-7">
+              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-orange sm:leading-7">
                 г. Краснодар, <br /> ул. Лавочкина 21
               </p>
             </a>
@@ -76,27 +76,23 @@ export default function Footer() {
               className="flex items-center gap-[10px]  hover:opacity-90 animate-simple"
             >
               <PiPhoneFill className="text-[35px] sm:text-[40px] text-orange" />
-              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-gray-light sm:leading-7">
+              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-orange sm:leading-7">
                 +7 (918) 246-88-77
               </p>
             </a>
-            <a
-              href="tel:89184706967"
-              target="_blank"
-              className="flex items-center gap-[10px] hover:opacity-90 animate-simple"
-            >
+            <div className="flex items-center gap-[10px] hover:opacity-90 animate-simple">
               <MdOutlineAccessTimeFilled className="text-[35px] sm:text-[40px] text-orange" />
-              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-gray-light sm:leading-7">
+              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 sm:leading-7">
                 понедельник-пятница 8:00 - 19:00 <br />
                 суббота, воскресенье 9:00 - 15:00
               </p>
-            </a>
+            </div>
             <Link
               href="/documents"
               className="flex items-center gap-[10px] animate-simple"
             >
               <BiSolidFileDoc className="text-[35px] sm:text-[40px] text-orange" />
-              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-gray-light sm:leading-7">
+              <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-orange sm:leading-7">
                 Юридическая информация
               </p>
             </Link>
@@ -108,7 +104,7 @@ export default function Footer() {
                 <Link
                   key={id}
                   href={url}
-                  className="text-[24px] text-white font-medium tracking-wide hover:text-gray-light animate-simple"
+                  className="text-[24px] text-white font-medium tracking-wide hover:text-orange animate-simple"
                 >
                   {title}
                 </Link>

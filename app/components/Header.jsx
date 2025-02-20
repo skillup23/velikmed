@@ -53,7 +53,7 @@ export default function Header() {
           <a
             href="https://yandex.ru/maps/-/CHqAJMJV"
             target="_blank"
-            className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
+            className="hidden md:flex items-center gap-1 hover:text-orange animate-simple"
           >
             <PiMapPinFill className="text-[30px] text-orange" />
             <p>
@@ -63,7 +63,7 @@ export default function Header() {
           <a
             href="tel:89182468877"
             target="_blank"
-            className="hidden md:flex items-center gap-1 hover:opacity-90 animate-simple"
+            className="hidden md:flex items-center gap-1 hover:text-orange animate-simple"
           >
             <PiPhoneFill className="text-[30px] text-orange" />
             <p className="text-[18px] font-bold">+7 (918) 246-88-77</p>
