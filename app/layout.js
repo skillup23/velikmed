@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
 import Script from 'next/script';
+import YandexMap from './components/YandexMap';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
           src="https://api-maps.yandex.ru/v3/?apikey=82d6ee1a-17d2-4939-b863-509822c2c026&lang=ru_RU"
           strategy="beforeInteractive"
         />
+
         <Footer />
       </body>
     </html>

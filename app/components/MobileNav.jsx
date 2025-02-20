@@ -1,20 +1,23 @@
-import yslugi1 from "@/public/img/main/yslugi1.png";
-import Image from "next/image";
-import Link from "next/link";
-import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import yslugi1 from '@/public/img/main/yslugi1.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
 
-export default function MobileNav({ navLinks, isOpen }) {
+export default function MobileNav({ navLinks, isOpen, openMobileMenu }) {
   return (
     <div
       className={`${
         isOpen ? `translate-x-0` : `-translate-x-full`
-      } flex lg:hidden absolute w-full h-dvh bg-orange p-8 top-[66px] sm:top-[93px] flex-col gap-10 animate-simple z-30`}
+      } flex lg:hidden absolute w-full h-dvh bg-orange p-6 top-[66px] sm:top-[93px] flex-col gap-10 animate-simple z-30`}
     >
       {navLinks.map(({ id, url, title }) => {
         return (
           <Link
             key={id}
             href={url}
+            onClick={() => {
+              openMobileMenu();
+            }}
             className="text-[20px] text-white uppercase font-medium tracking-wide hover:text-gray-light animate-simple"
           >
             {title}

@@ -2,7 +2,7 @@ import bannerMain from '@/public/img/main/bannerMain1.png';
 import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
 import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
 import princip from '@/public/img/main/img-princip.png';
-import mapKontact from '@/public/img/main/map.jpg';
+// import mapKontact from '@/public/img/main/map.jpg';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
 import Image from 'next/image';
 import ButtonFeed from './components/ButtonFeed';
@@ -176,7 +176,10 @@ export default function Home() {
               </li>
             </ul>
 
-            <div className="w-full sm:max-w-[603px] h-[271px] sm:h-full object-cover rounded-xl">
+            <div
+              id="map"
+              className="w-full sm:max-w-[603px] h-[271px] sm:h-[330px] object-cover rounded-xl"
+            >
               <YandexMap />
             </div>
             {/* <Image

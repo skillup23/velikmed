@@ -183,6 +183,25 @@
     #e15225;
 }
 
+/* Карта Яндекс */
+.ymaps3x0--map-container {
+  border-radius: 15px;
+}
+.ymaps3x0--marker {
+  z-index: 0;
+  width: 50px;
+}
+.my-marker {
+  margin-top: -40px;
+  margin-left: -30px;
+}
+.marker-title {
+  margin-top: -5px;
+  font-size: 10px;
+  color: #e15225;
+}
+
+/* Мобильный адаптив */
 @media (max-width: 768px) {
   .bg-gradient1 {
     background: linear-gradient(
