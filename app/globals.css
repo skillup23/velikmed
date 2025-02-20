@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-blue: #1fb6ff;
@@ -82,7 +82,7 @@
     @apply text-[14px] sm:text-[20px] leading-5 font-semibold tracking-[0.02em];
   }
   h6 {
-    @apply text-[18px] leading-5 font-semibold tracking-[0.02em];
+    @apply text-[14px] md:text-[18px] leading-5 font-semibold tracking-[0.02em];
   }
   p {
     @apply text-[16px] leading-5 font-semibold tracking-[0.02em];

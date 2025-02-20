@@ -1,16 +1,17 @@
-import bannerMain from "@/public/img/main/bannerMain1.png";
-import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
-import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
-import princip from "@/public/img/main/img-princip.png";
-import mapKontact from "@/public/img/main/map.jpg";
-import oKlinike from "@/public/img/main/o-klinike2.jpg";
-import Image from "next/image";
-import ButtonFeed from "./components/ButtonFeed";
-import Doctors from "./components/Doctors";
-import Heading from "./components/Heading";
-import Princips from "./components/Princips";
-import SliderFeedback from "./components/SliderFeedback";
-import UslugiMain from "./components/UslugiMain";
+import bannerMain from '@/public/img/main/bannerMain1.png';
+import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
+import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
+import princip from '@/public/img/main/img-princip.png';
+import mapKontact from '@/public/img/main/map.jpg';
+import oKlinike from '@/public/img/main/o-klinike2.jpg';
+import Image from 'next/image';
+import ButtonFeed from './components/ButtonFeed';
+import Doctors from './components/Doctors';
+import Heading from './components/Heading';
+import Princips from './components/Princips';
+import SliderFeedback from './components/SliderFeedback';
+import UslugiMain from './components/UslugiMain';
+import YandexMap from './components/YandexMap';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={"hidden sm:block"} />
+              <ButtonFeed style={'hidden sm:block'} />
             </div>
             <Image
               src={bannerMain}
@@ -52,12 +53,12 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
+          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
         </div>
       </section>
 
       {/* ----------------- Услуги ----------------------- */}
-      <section className="section">
+      <section className="section" id="uslugi">
         <div className="container mx-auto px-5">
           <Heading>Услуги</Heading>
           <UslugiMain />
@@ -83,14 +84,17 @@ export default function Home() {
       </section>
 
       {/* ----------------- Наши специалисты ----------------------- */}
-      <section className="section relative mt-8 sm:py-10 bg-gradient2 z-10 rounded-3xl animate-simple">
+      <section
+        className="section relative mt-8 sm:py-10 bg-gradient2 z-10 rounded-3xl animate-simple"
+        id="doctors"
+      >
         <div className="container mx-auto px-5">
           {/* <div className="hidden sm:block">
             <Heading style="text-white">Наши специалисты</Heading>
             <SliderMain />
           </div> */}
 
-          <div className="bg-gradient1 rounded-xl">
+          <div className="p-6 md:p-0 bg-gradient1 rounded-xl">
             <Heading style="text-white">Наши специалисты</Heading>
             <Doctors />
           </div>
@@ -98,22 +102,22 @@ export default function Home() {
       </section>
 
       {/* ----------------- О Клинике ----------------------- */}
-      <section className="section">
+      <section className="section" id="oklinike">
         <div className="container mx-auto px-5">
           <Heading>О клинике</Heading>
           <div className="w-full mt-6 sm:mt-8 flex flex-col-reverse sm:flex-row bg-gray-dark rounded-xl overflow-hidden gap-9">
             <div className="sm:w-1/2 pt-4 pb-6 px-6 sm:p-10 pr-0 text-white bg-gray-dark">
-              <h6 className="mb-6 text-[14px] sm:text-[18px] font-medium leading-7 text-balance">
+              <h6 className="mb-4 md:mb-6 text-[14px] sm:text-[18px] font-medium leading-6 md:leading-7 text-balance">
                 Клиника ВеликМед — это современное медицинское учреждение,
                 предлагающее широкий спектр услуг в области диагностики, лечения
                 и профилактики заболеваний.
               </h6>
-              <h6 className="mb-6 text-[14px] sm:text-[18px] font-medium leading-7 ">
+              <h6 className="mb-4 md:mb-6 text-[14px] sm:text-[18px] font-medium leading-6 md:leading-7">
                 В клинике работают высококвалифицированные специалисты, которые
                 используют передовые методы и технологии для обеспечения
                 качественного и эффективного обслуживания пациентов.
               </h6>
-              <h6 className="text-[14px] sm:text-[18px] font-medium leading-7 ">
+              <h6 className="text-[14px] sm:text-[18px] font-medium leading-6 md:leading-7">
                 Клиника оснащена современным оборудованием, которое позволяет
                 проводить диагностику и лечение на высоком уровне.
               </h6>
@@ -132,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* ----------------- Отзывы ----------------------- */}
-      <section className="section">
+      <section className="section" id="feedback">
         <div className="container mx-auto px-5">
           <Heading>Отзывы</Heading>
           <SliderFeedback />
@@ -140,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* ----------------- Контакты ----------------------- */}
-      <section className="section mb-[72px]">
+      <section className="section mb-[72px]" id="contacts">
         <div className="container mx-auto px-5">
           <Heading>Контакты</Heading>
           <div className="w-full mt-6 sm:mt-8 p-6 sm:p-10 flex flex-col sm:flex-row bg-orange rounded-xl overflow-hidden gap-8 sm:gap-[58px]">
@@ -171,13 +175,17 @@ export default function Home() {
                 </h4>
               </li>
             </ul>
-            <Image
+
+            <div className="w-full sm:max-w-[603px] h-[271px] sm:h-full object-cover rounded-xl">
+              <YandexMap />
+            </div>
+            {/* <Image
               src={mapKontact}
               width="auto"
               height="auto"
               alt="Баннер Фото"
               className="w-full sm:max-w-[603px] h-[271px] sm:h-full object-cover rounded-xl"
-            />
+            /> */}
           </div>
         </div>
       </section>

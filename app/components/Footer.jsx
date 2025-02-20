@@ -1,16 +1,16 @@
-import { navLinks } from "@/public/data/data";
-import imgFooter from "@/public/img/main/img-footer.png";
-import logo from "@/public/img/main/logo-footer.jpg";
-import proDoctorov from "@/public/img/main/pro-doctorov.svg";
-import Image from "next/image";
-import Link from "next/link";
-import { BiSolidFileDoc } from "react-icons/bi";
-import { MdOutlineAccessTimeFilled } from "react-icons/md";
-import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import { navLinks } from '@/public/data/data';
+import imgFooter from '@/public/img/main/img-footer.png';
+import logo from '@/public/img/main/logo-footer.jpg';
+import proDoctorov from '@/public/img/main/pro-doctorov.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import { BiSolidFileDoc } from 'react-icons/bi';
+import { MdOutlineAccessTimeFilled } from 'react-icons/md';
+import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
 
 export default function Footer() {
   return (
-    <footer className="py-10 bg-gray-dark">
+    <footer className="pt-2 pb-6 md:py-10 bg-gray-dark">
       <div className="container mx-auto px-5 relative">
         <div className="w-full flex flex-col sm:flex-row justify-between">
           <div>
@@ -32,12 +32,12 @@ export default function Footer() {
                 width="auto"
                 height="auto"
                 alt="Лого"
-                className="w-[150px] sm:w-[257px] mt-1 sm:mt-2 cursor-pointer rounded-lg"
+                className="hidden md:block w-[150px] sm:w-[257px] mt-1 sm:mt-2 cursor-pointer rounded-lg"
               />
             </Link>
           </div>
 
-          <nav className="flex sm:hidden flex-row flex-wrap gap-x-[22px] gap-y-4 justify-center">
+          <nav className="mt-4 flex sm:hidden flex-row flex-wrap gap-x-[22px] gap-y-4 justify-center">
             {navLinks.map(({ id, url, title }) => {
               return (
                 <Link
@@ -50,6 +50,14 @@ export default function Footer() {
               );
             })}
           </nav>
+
+          <Image
+            src={proDoctorov}
+            width="auto"
+            height="auto"
+            alt="Лого"
+            className="block md:hidden mx-auto w-[200px] mt-8 sm:mt-2 cursor-pointer rounded-lg"
+          />
 
           <div className="mt-8 sm:mt-0 sm:-ml-10 flex flex-col justify-between text-white gap-3 sm:gap-7">
             <a
@@ -109,7 +117,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <p className="mt-10 sm:-mt-6 text-center sm:text-start text-white font-medium">
+        <p className="mt-10 md:-mt-6 text-center sm:text-start text-white font-medium">
           ©2025 «ВеликМед»
         </p>
 
@@ -118,7 +126,7 @@ export default function Footer() {
           width="auto"
           height="auto"
           alt="Красный крестик в круге"
-          className="absolute -top-20 right-6 sm:right-[250px] w-[120px] sm:max-w-[160px]"
+          className="absolute -top-16 md:-top-20 right-6 sm:right-[250px] w-[120px] sm:max-w-[160px]"
         />
       </div>
     </footer>
