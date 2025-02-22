@@ -1,5 +1,4 @@
-import Script from 'next/script';
-import React from 'react';
+import Script from "next/script";
 
 function YandexMap() {
   return (
@@ -48,7 +47,7 @@ function YandexMap() {
    // Создание маркера
    const el = document.createElement('img');
    el.className = 'my-marker';
-   el.src = 'https://i.postimg.cc/bvLtnp2S/marker-orange.png';
+   el.src = '/img/main/marker-orange.png';
    el.title = 'Маркер';
    // При клике на маркер меняем центр карты на LOCATION с заданным duration
    el.onclick = () => map.update({location: {...LOCATION, duration: 400}});
