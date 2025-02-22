@@ -1,12 +1,12 @@
-import { navLinks } from '@/public/data/data';
-import imgFooter from '@/public/img/main/img-footer.png';
-import logo from '@/public/img/main/logo-footer.jpg';
-import proDoctorov from '@/public/img/main/pro-doctorov.svg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { BiSolidFileDoc } from 'react-icons/bi';
-import { MdOutlineAccessTimeFilled } from 'react-icons/md';
-import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
+import { navLinks } from "@/public/data/data";
+import imgFooter from "@/public/img/main/img-footer.png";
+import logo from "@/public/img/main/logo-footer.jpg";
+import proDoctorov from "@/public/img/main/pro-doctorov.svg";
+import Image from "next/image";
+import Link from "next/link";
+import { BiSolidFileDoc } from "react-icons/bi";
+import { MdOutlineAccessTimeFilled } from "react-icons/md";
+import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
@@ -87,7 +87,7 @@ export default function Footer() {
                 суббота, воскресенье 9:00 - 15:00
               </p>
             </div>
-            <Link
+            <a
               href="/documents"
               className="flex items-center gap-[10px] animate-simple"
             >
@@ -95,7 +95,7 @@ export default function Footer() {
               <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-orange sm:leading-7">
                 Юридическая информация
               </p>
-            </Link>
+            </a>
           </div>
 
           <nav className="hidden sm:flex flex-col gap-3">
