@@ -87,7 +87,7 @@ export default function Footer() {
                 суббота, воскресенье 9:00 - 15:00
               </p>
             </div>
-            <a
+            <Link
               href="/documents"
               className="flex items-center gap-[10px] animate-simple"
             >
@@ -95,7 +95,7 @@ export default function Footer() {
               <p className="text-[14px] sm:text-[18px] font-semibold leading-6 hover:text-orange sm:leading-7">
                 Юридическая информация
               </p>
-            </a>
+            </Link>
           </div>
 
           <nav className="hidden sm:flex flex-col gap-3">
