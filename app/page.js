@@ -1,17 +1,17 @@
-import bannerMain from '@/public/img/main/bannerMain1.png';
-import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
-import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
-import princip from '@/public/img/main/img-princip.png';
+import bannerMain from "@/public/img/main/bannerMain1.png";
+import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
+import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
+import princip from "@/public/img/main/img-princip.png";
 // import mapKontact from '@/public/img/main/map.jpg';
-import oKlinike from '@/public/img/main/o-klinike2.jpg';
-import Image from 'next/image';
-import ButtonFeed from './components/ButtonFeed';
-import Doctors from './components/Doctors';
-import Heading from './components/Heading';
-import Princips from './components/Princips';
-import SliderFeedback from './components/SliderFeedback';
-import UslugiMain from './components/UslugiMain';
-import YandexMap from './components/YandexMap';
+import oKlinike from "@/public/img/main/o-klinike2.jpg";
+import Image from "next/image";
+import ButtonFeed from "./components/ButtonFeed";
+import Doctors from "./components/Doctors";
+import Heading from "./components/Heading";
+import Princips from "./components/Princips";
+import SliderFeedback from "./components/SliderFeedback";
+import UslugiMain from "./components/UslugiMain";
+import YandexMap2 from "./components/YandexMap2";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={'hidden sm:block'} />
+              <ButtonFeed style={"hidden sm:block"} />
             </div>
             <Image
               src={bannerMain}
@@ -53,7 +53,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
+          <ButtonFeed style={"block sm:hidden mt-4 w-full"} />
         </div>
       </section>
 
@@ -178,9 +178,9 @@ export default function Home() {
 
             <div
               id="map"
-              className="w-full sm:max-w-[603px] h-[271px] sm:h-[330px] object-cover rounded-xl"
+              className="w-full sm:max-w-[603px] h-[271px] sm:h-[330px] object-cover rounded-xl overflow-hidden"
             >
-              <YandexMap />
+              <YandexMap2 />
             </div>
             {/* <Image
               src={mapKontact}
