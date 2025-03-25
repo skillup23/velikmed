@@ -1,12 +1,13 @@
-import { navLinks } from "@/public/data/data";
-import imgFooter from "@/public/img/main/img-footer.png";
-import logo from "@/public/img/main/logo-footer.jpg";
-import proDoctorov from "@/public/img/main/pro-doctorov.svg";
-import Image from "next/image";
-import Link from "next/link";
-import { BiSolidFileDoc } from "react-icons/bi";
-import { MdOutlineAccessTimeFilled } from "react-icons/md";
-import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import { navLinks } from '@/public/data/data';
+import imgFooter from '@/public/img/main/img-footer.png';
+import logo from '@/public/img/main/logo-footer.jpg';
+import proDoctorov from '@/public/img/main/pro-doctorov.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import { BiSolidFileDoc } from 'react-icons/bi';
+import { MdOutlineAccessTimeFilled } from 'react-icons/md';
+import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
+import ProDoctorovButton from './ProDoctorovButton';
 
 export default function Footer() {
   return (
@@ -125,6 +126,8 @@ export default function Footer() {
           className="absolute -top-16 md:-top-20 right-6 sm:right-[250px] w-[120px] sm:max-w-[160px]"
         />
       </div>
+
+      <ProDoctorovButton />
     </footer>
   );
 }
