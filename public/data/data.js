@@ -80,13 +80,13 @@ const doctors = [
     workYear: 'стаж 11 лет',
     foto: doctorImg,
   },
-  {
-    id: id++,
-    fio: 'Эльдерова Индира Рамидиновна',
-    spec: 'невролог',
-    workYear: 'стаж 32 года',
-    foto: doctorImg,
-  },
+  // {
+  //   id: id++,
+  //   fio: 'Эльдерова Индира Рамидиновна',
+  //   spec: 'невролог',
+  //   workYear: 'стаж 32 года',
+  //   foto: doctorImg,
+  // },
   {
     id: id++,
     fio: 'Дьяченко Галия Фуатовна',
