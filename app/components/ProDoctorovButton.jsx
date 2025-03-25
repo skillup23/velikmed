@@ -6,7 +6,7 @@ export default function ProDoctorovButton() {
       <div
         id="medflexRoundWidgetData"
         data-src="https://booking.medflex.ru?user=7b38db40021d199d3686a471d2084cc3&isRoundWidget=true"
-        className="bg-orange"
+        className="text-base"
       ></div>
       <Script
         defer
