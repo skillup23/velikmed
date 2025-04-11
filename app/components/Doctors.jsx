@@ -43,7 +43,7 @@ export default function Doctors() {
               <h6 className="my-auto py-2 px-[18px] text-orange border border-orange rounded-2xl inline-block">
                 {spec}
               </h6>
-              <h6>{workYear}</h6>
+              <h6 className="z-10">{workYear}</h6>
               <Image
                 src={foto}
                 width="auto"
@@ -70,7 +70,7 @@ export default function Doctors() {
               <h6 className="my-auto py-2 px-[18px] text-orange border border-orange rounded-2xl inline-block">
                 {spec}
               </h6>
-              <h6>{workYear}</h6>
+              <h6 className="z-10">{workYear}</h6>
               <Image
                 src={foto}
                 width="auto"
