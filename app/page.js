@@ -2,6 +2,7 @@ import bannerMain from '@/public/img/main/bannerMain1.png';
 import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
 import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
 import princip from '@/public/img/main/img-princip.png';
+import virtToor from '@/public/img/main/virtToor.jpg';
 // import mapKontact from '@/public/img/main/map.jpg';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
 import Image from 'next/image';
@@ -12,6 +13,7 @@ import Princips from './components/Princips';
 import SliderFeedback from './components/SliderFeedback';
 import UslugiMain from './components/UslugiMain';
 import YandexMap2 from './components/YandexMap2';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -126,6 +128,14 @@ export default function Home() {
               className="w-full -mb-28 sm:mb-0 sm:w-1/2 h-full"
               priority
             />
+          </div>
+
+          <div className="mt-10 sm:mt-20 w-full h-[203px] lg:h-[406px] flex items-center justify-center bg-[url(@/public/img/main/virtToor.jpg)] bg-right bg-cover rounded-2xl">
+            <button className="px-4 sm:px-8 py-3 text-[14px] sm:text-[18px] text-white uppercase bg-orange rounded-xl cursor-pointer hover:bg-orange-dark animate-simple">
+              <Link href="https://yandex.ru/maps/-/CLB3MVpN" target="_blank">
+                виртуальный тур клиники Великмед
+              </Link>
+            </button>
           </div>
         </div>
       </section>
