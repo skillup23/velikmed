@@ -66,6 +66,7 @@ import saidov from '@/public/img/main/doctors/saidov.png';
 import sis from '@/public/img/main/doctors/sis.png';
 import velikjanina from '@/public/img/main/doctors/velikjanina.png';
 import kazanceva from '@/public/img/main/doctors/kazanceva.png';
+import eliseev from '@/public/img/main/doctors/eliseev.jpg';
 
 const doctors = [
   {
@@ -99,7 +100,7 @@ const doctors = [
   {
     id: id++,
     fio: 'Дьяченко Галия Фуатовна',
-    spec: 'врач-косметолог, косметолог-эстетист',
+    spec: 'косметист, косметолог-эстетист',
     workYear: 'стаж 15 лет',
     foto: diadchenko,
   },
@@ -186,6 +187,13 @@ const doctors = [
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
     foto: kazanceva,
+  },
+  {
+    id: id++,
+    fio: 'Елисеев Роман Викторович',
+    spec: 'уролог',
+    workYear: 'стаж 18 лет',
+    foto: eliseev,
   },
 ];
 
