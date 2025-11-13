@@ -4,6 +4,7 @@ import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
 import princip from '@/public/img/main/img-princip.png';
 // import mapKontact from '@/public/img/main/map.jpg';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
+import news1 from '@/public/img/news/1.jpg';
 import Image from 'next/image';
 import ButtonFeed from './components/ButtonFeed';
 import Doctors from './components/Doctors';
@@ -136,6 +137,44 @@ export default function Home() {
               </Link>
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* ----------------- Новости ----------------------- */}
+      <section className="section" id="news">
+        <div className="container mx-auto px-5">
+          <Heading>Новости</Heading>
+          <ul className="mt-6 flex flex-col gap-4">
+            <Link href="/news/article1" className="group">
+              <li className="flex rounded-xl border-orange border-2 overflow-hidden">
+                <Image
+                  src={news1}
+                  width="auto"
+                  height="auto"
+                  alt="Фото"
+                  className="w-1/2 -mb-28 sm:mb-0 sm:w-1/5 h-full"
+                  priority
+                />
+                <div className="p-6 flex flex-col justify-between">
+                  <p className="group-hover:text-orange transition duration-300">
+                    Статья из журнала Красота&Спорт
+                  </p>
+                  <h5 className="font-bold group-hover:text-orange transition duration-300">
+                    Елена Анатольевна Великжанина
+                  </h5>
+                  <div className="flex flex-col gap-1">
+                    <p>Врач акушер-гинеколог со стажем</p>
+                    <p>Организатор зравоохранения</p>
+                    <p>Главный врач</p>
+                    <p>
+                      Генеральный директор многопрофильной клиники ООО
+                      «ВеликМед»
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+          </ul>
         </div>
       </section>
 
