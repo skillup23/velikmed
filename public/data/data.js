@@ -67,6 +67,7 @@ import sis from '@/public/img/main/doctors/sis.png';
 import velikjanina from '@/public/img/main/doctors/velikjanina.png';
 import kazanceva from '@/public/img/main/doctors/kazanceva.png';
 import eliseev from '@/public/img/main/doctors/eliseev.jpg';
+import kozir from '@/public/img/main/doctors/kozir.jpg';
 
 const doctors = [
   {
@@ -194,6 +195,13 @@ const doctors = [
     spec: 'уролог',
     workYear: 'стаж 18 лет',
     foto: eliseev,
+  },
+  {
+    id: id++,
+    fio: 'Козырь Лилия Николаевна',
+    spec: 'гинеколог',
+    workYear: 'стаж 6 лет',
+    foto: kozir,
   },
 ];
 
