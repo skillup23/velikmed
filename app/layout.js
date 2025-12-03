@@ -67,12 +67,14 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
+
         <YandexMetricaProvider
-          tagID={105637836}
+          tagID={12345678}
           initParameters={{
+            defer: true,
+            async: true,
             clickmap: true,
             trackLinks: true,
-            accurateTrackBounce: true,
           }}
           router="app"
         >
