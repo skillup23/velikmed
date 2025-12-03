@@ -9,15 +9,15 @@ export default function Article1() {
         <div className="container mx-auto px-5 ">
           <Image
             src={img1}
-            width="auto"
-            height="auto"
+            width={1200}
+            height={800}
             alt="Статья часть 1"
             className="-mt-5"
           />
           <Image
             src={img2}
-            width="auto"
-            height="auto"
+            width={1200}
+            height={800}
             alt="Статья часть 2"
             className="mb-10"
           />
