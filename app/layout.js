@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
 import Script from 'next/script';
-// import YandexMap from './components/YandexMap';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -73,7 +72,7 @@ export default function RootLayout({ children }) {
                 m[i].l=1*new Date();
                 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
                 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-              })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+              })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=${yandexId}', 'ym');
 
               ym(${yandexId}, 'init', {
                 ssr: true,
@@ -90,11 +89,6 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        {/* <Script
-          src="https://api-maps.yandex.ru/v3/?apikey=82d6ee1a-17d2-4939-b863-509822c2c026&lang=ru_RU"
-          strategy="beforeInteractive"
-        /> */}
-
         <Footer />
         <noscript>
           <div>
@@ -105,7 +99,6 @@ export default function RootLayout({ children }) {
             />
           </div>
         </noscript>
-        {/* <YandexMetrika /> */}
       </body>
     </html>
   );
