@@ -4,7 +4,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
 // import Script from 'next/script';
-import YandexMetrika from './components/YandexMetrika';
+// import YandexMetrika from './components/YandexMetrika';
+import { YandexMetricaProvider } from 'next-yandex-metrica';
 // import MetrikaDebug from './components/MetrikaDebug';
 
 const roboto = Roboto({
@@ -66,11 +67,22 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
-        {children}
+        <YandexMetricaProvider
+          tagID={105637836}
+          initParameters={{
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+          }}
+          router="app"
+        >
+          {children}
+        </YandexMetricaProvider>
+
         <Footer />
-        <YandexMetrika />
+        {/* <YandexMetrika /> */}
         {/* <MetrikaDebug /> Временно для отладки */}
-        <noscript>
+        {/* <noscript>
           <div>
             <img
               src={`https://mc.yandex.ru/watch/105637836`}
@@ -78,7 +90,7 @@ export default function RootLayout({ children }) {
               alt=""
             />
           </div>
-        </noscript>
+        </noscript> */}
       </body>
     </html>
   );
