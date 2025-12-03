@@ -3,7 +3,9 @@ import localFont from 'next/font/local';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
-import Script from 'next/script';
+// import Script from 'next/script';
+import YandexMetrika from './components/YandexMetrika';
+// import MetrikaDebug from './components/MetrikaDebug';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -54,8 +56,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const yandexId = '105637836';
-
   return (
     <html
       lang="ru"
@@ -63,31 +63,17 @@ export default function RootLayout({ children }) {
     >
       <head>
         <meta name="yandex-verification" content="b185e265bc9ff40c" />
-        <Script
-          id="yandex-metrika"
-          strategy="afterInteractive"
-          src="https://mc.yandex.ru/metrika/tag.js?id=105637836"
-          onLoad={() => {
-            // Инициализация после загрузки скрипта
-            window.ym(105637836, 'init', {
-              ssr: true,
-              webvisor: true,
-              clickmap: true,
-              ecommerce: 'dataLayer',
-              accurateTrackBounce: true,
-              trackLinks: true,
-            });
-          }}
-        />
       </head>
       <body>
         <Header />
         {children}
         <Footer />
+        <YandexMetrika />
+        {/* <MetrikaDebug /> Временно для отладки */}
         <noscript>
           <div>
             <img
-              src={`https://mc.yandex.ru/watch/${yandexId}`}
+              src={`https://mc.yandex.ru/watch/105637836`}
               style={{ position: 'absolute', left: '-9999px' }}
               alt=""
             />

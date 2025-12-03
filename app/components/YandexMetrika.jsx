@@ -1,23 +1,63 @@
-// 'use client';
+'use client';
 
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 
-// export default function YandexMetrika() {
-//   useEffect(() => {
-//     // Вставляем оригинальный код Яндекс.Метрики
-//     const script = document.createElement('script');
-//     script.innerHTML = `
-//       (function(m,e,t,r,i,k,a){
-//         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-//         m[i].l=1*new Date();
-//         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-//         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-//       })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105637836', 'ym');
+export default function YandexMetrika() {
+  useEffect(() => {
+    // Проверяем, не добавлен ли уже счетчик
+    if (window.ym && window.yaCounter105637836) return;
 
-//       ym(105637836, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-//     `;
-//     document.head.appendChild(script);
-//   }, []);
+    // Создаем и добавляем скрипт
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://mc.yandex.ru/metrika/tag.js?id=105637836';
 
-//   return null;
-// }
+    // Обработчики для разных браузеров
+    script.onload = script.onreadystatechange = function () {
+      if (
+        !this.readyState ||
+        this.readyState === 'loaded' ||
+        this.readyState === 'complete'
+      ) {
+        if (window.ym) {
+          window.ym(105637836, 'init', {
+            ssr: true,
+            webvisor: true,
+            clickmap: true,
+            ecommerce: 'dataLayer',
+            accurateTrackBounce: true,
+            trackLinks: true,
+          });
+          console.log('Yandex Metrika loaded successfully');
+        }
+        // Очистка обработчиков
+        script.onload = script.onreadystatechange = null;
+      }
+    };
+
+    // Добавляем скрипт в документ
+    document.head.appendChild(script);
+
+    // Инициализация на случай, если ym уже доступен
+    if (window.ym) {
+      window.ym(105637836, 'init', {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: 'dataLayer',
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    }
+
+    // Очистка
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
+  return null;
+}
