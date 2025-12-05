@@ -68,6 +68,8 @@ import velikjanina from '@/public/img/main/doctors/velikjanina.png';
 import kazanceva from '@/public/img/main/doctors/kazanceva.png';
 import eliseev from '@/public/img/main/doctors/eliseev.jpg';
 import kozir from '@/public/img/main/doctors/kozir.jpg';
+import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
+import efremova from '@/public/img/main/doctors/efremova.jpg';
 
 const doctors = [
   {
@@ -202,6 +204,20 @@ const doctors = [
     spec: 'гинеколог',
     workYear: 'стаж 6 лет',
     foto: kozir,
+  },
+  {
+    id: id++,
+    fio: 'Зозуленко Татьяна Юрьевна',
+    spec: 'гастроэнтеролог',
+    workYear: 'стаж 9 лет',
+    foto: zozylenko,
+  },
+  {
+    id: id++,
+    fio: 'Ефремова Екатерина Владимировна',
+    spec: 'гинеколог',
+    workYear: 'стаж 18 лет',
+    foto: efremova,
   },
 ];
 
