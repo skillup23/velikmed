@@ -56,8 +56,8 @@ const princips = [
   },
 ];
 
-import beresovskaya from '@/public/img/main/doctors/beresovskaya.png';
-import bratchikova from '@/public/img/main/doctors/bratchikova.png';
+import velikzhanin from '@/public/img/main/doctors/velikzhanin.jpg';
+import drobisheva from '@/public/img/main/doctors/drobisheva.png';
 import diadchenko from '@/public/img/main/doctors/diadchenko.png';
 import doctorImg from '@/public/img/main/doctors/doctorNoFon.png';
 import kireeva from '@/public/img/main/doctors/kireeva.png';
@@ -70,6 +70,7 @@ import eliseev from '@/public/img/main/doctors/eliseev.jpg';
 import kozir from '@/public/img/main/doctors/kozir.jpg';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import efremova from '@/public/img/main/doctors/efremova.jpg';
+import kyarimova from '@/public/img/main/doctors/kyarimova.jpg';
 
 const doctors = [
   {
@@ -81,10 +82,17 @@ const doctors = [
   },
   {
     id: id++,
-    fio: 'Братчикова Ирина Станиславовна',
+    fio: 'Ефремова Екатерина Владимировна',
     spec: 'гинеколог',
-    workYear: 'стаж 29 лет',
-    foto: bratchikova,
+    workYear: 'стаж 18 лет',
+    foto: efremova,
+  },
+  {
+    id: id++,
+    fio: 'Дробышева Татьяна Васильевна',
+    spec: 'трихолог',
+    workYear: 'стаж 25 лет',
+    foto: drobisheva,
   },
   {
     id: id++,
@@ -93,20 +101,6 @@ const doctors = [
     workYear: 'стаж 11 лет',
     foto: sis,
   },
-  // {
-  //   id: id++,
-  //   fio: "Андреева Елена Алексеевна ",
-  //   spec: "гинеколог, врач УЗИ",
-  //   workYear: "стаж 12 лет",
-  //   foto: andreeva,
-  // },
-  {
-    id: id++,
-    fio: 'Дьяченко Галия Фуатовна',
-    spec: 'косметист, косметолог-эстетист',
-    workYear: 'стаж 15 лет',
-    foto: diadchenko,
-  },
   {
     id: id++,
     fio: 'Саидов Эльшад Баходирович',
@@ -114,26 +108,26 @@ const doctors = [
     workYear: 'стаж 7 лет',
     foto: saidov,
   },
-  // {
-  //   id: id++,
-  //   fio: "Шитикова Любовь Николаевна",
-  //   spec: "терапевт, инфекционист",
-  //   workYear: "стаж 15 лет",
-  //   foto: shitikova,
-  // },
-  // {
-  //   id: id++,
-  //   fio: 'Синянская Марина Николаевна',
-  //   spec: 'гинеколог, акушер, врач\u00A0УЗИ',
-  //   workYear: 'стаж 20 лет',
-  //   foto: sinanskaya,
-  // },
   {
     id: id++,
-    fio: 'Березовская Ирина Леонидовна',
-    spec: 'дерматолог, онколог, трихолог, врач-косметолог',
-    workYear: 'стаж 31 год',
-    foto: beresovskaya,
+    fio: 'Зозуленко Татьяна Юрьевна',
+    spec: 'гастроэнтеролог',
+    workYear: 'стаж 9 лет',
+    foto: zozylenko,
+  },
+  {
+    id: id++,
+    fio: 'Кяримова Шэкла Тофиковна',
+    spec: 'гинеколог, терапевт',
+    workYear: 'стаж 4 года',
+    foto: kyarimova,
+  },
+  {
+    id: id++,
+    fio: 'Великжанин Виталий Анатольевич',
+    spec: 'гастроэнтеролог',
+    workYear: 'стаж 32 года',
+    foto: velikzhanin,
   },
   {
     id: id++,
@@ -142,13 +136,15 @@ const doctors = [
     workYear: 'стаж 34 года',
     foto: kolcova,
   },
-  // {
-  //   id: id++,
-  //   fio: "Киракосьян Марина Робертовна",
-  //   spec: "гинеколог",
-  //   workYear: "стаж 15 лет",
-  //   foto: kirakosian,
-  // },
+
+  {
+    id: id++,
+    fio: 'Дьяченко Галия Фуатовна',
+    spec: 'косметист, косметолог-эстетист',
+    workYear: 'стаж 15 лет',
+    foto: diadchenko,
+  },
+
   {
     id: id++,
     fio: 'Киреева Елена Фуатовна',
@@ -156,20 +152,7 @@ const doctors = [
     workYear: 'стаж 13 лет',
     foto: kireeva,
   },
-  // {
-  //   id: id++,
-  //   fio: 'Колесников Евгений Викторович',
-  //   spec: 'мануальный терапевт',
-  //   workYear: 'стаж 31 год',
-  //   foto: kolesnikov,
-  // },
-  // {
-  //   id: id++,
-  //   fio: 'Котова Татьяна Николаевна',
-  //   spec: 'психолог',
-  //   workYear: 'стаж 19 лет',
-  //   foto: kotova,
-  // },
+
   {
     id: id++,
     fio: 'Урбан Полина Ивановна',
@@ -205,20 +188,63 @@ const doctors = [
     workYear: 'стаж 6 лет',
     foto: kozir,
   },
-  {
-    id: id++,
-    fio: 'Зозуленко Татьяна Юрьевна',
-    spec: 'гастроэнтеролог',
-    workYear: 'стаж 9 лет',
-    foto: zozylenko,
-  },
-  {
-    id: id++,
-    fio: 'Ефремова Екатерина Владимировна',
-    spec: 'гинеколог',
-    workYear: 'стаж 18 лет',
-    foto: efremova,
-  },
+
+  // {
+  //   id: id++,
+  //   fio: 'Братчикова Ирина Станиславовна',
+  //   spec: 'гинеколог',
+  //   workYear: 'стаж 29 лет',
+  //   foto: bratchikova,
+  // },
+  // {
+  //   id: id++,
+  //   fio: 'Колесников Евгений Викторович',
+  //   spec: 'мануальный терапевт',
+  //   workYear: 'стаж 31 год',
+  //   foto: kolesnikov,
+  // },
+  // {
+  //   id: id++,
+  //   fio: 'Котова Татьяна Николаевна',
+  //   spec: 'психолог',
+  //   workYear: 'стаж 19 лет',
+  //   foto: kotova,
+  // },
+  // {
+  //   id: id++,
+  //   fio: "Киракосьян Марина Робертовна",
+  //   spec: "гинеколог",
+  //   workYear: "стаж 15 лет",
+  //   foto: kirakosian,
+  // },
+  // {
+  //   id: id++,
+  //   fio: "Шитикова Любовь Николаевна",
+  //   spec: "терапевт, инфекционист",
+  //   workYear: "стаж 15 лет",
+  //   foto: shitikova,
+  // },
+  // {
+  //   id: id++,
+  //   fio: 'Синянская Марина Николаевна',
+  //   spec: 'гинеколог, акушер, врач\u00A0УЗИ',
+  //   workYear: 'стаж 20 лет',
+  //   foto: sinanskaya,
+  // },
+  // {
+  //   id: id++,
+  //   fio: 'Березовская Ирина Леонидовна',
+  //   spec: 'дерматолог, онколог, трихолог, врач-косметолог',
+  //   workYear: 'стаж 31 год',
+  //   foto: beresovskaya,
+  // },
+  // {
+  //   id: id++,
+  //   fio: "Андреева Елена Алексеевна ",
+  //   spec: "гинеколог, врач УЗИ",
+  //   workYear: "стаж 12 лет",
+  //   foto: andreeva,
+  // },
 ];
 
 const documents = [
@@ -240,7 +266,7 @@ const documents = [
   {
     id: id++,
     title: 'Реквизиты клиники ВеликМед',
-    url: '#',
+    url: '/img/docs/реквизиты.pdf',
   },
   {
     id: id++,

@@ -86,17 +86,17 @@ const CookieConsent = () => {
   if (!showConsent) return null;
 
   return (
-    <div className="fixed w-8/12 sm:w-[700px] bottom-0 left-0 z-50 animate-slide-up">
-      <div className="bg-white border-t border-gray-200 shadow-lg rounded-md">
-        <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+    <div className="fixed w-8/12 md:w-[800px] bottom-1 left-1 sm:bottom-4 sm:left-4 z-50 animate-slide-up">
+      <div className="bg-gray-dark shadow-lg rounded-md">
+        <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 lg:py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="text-center sm:text-left flex-1">
-              <p className="text-[11px] sm:text-sm text-gray-700">
+              <p className="text-base sm:text-lg text-white leading-6">
                 Мы используем файлы cookie для анализа трафика через
-                Яндекс.Метрику. Продолжая использовать сайт, вы соглашаетесь с
-                обработкой данных.
-                <span className="block text-[10px] text-gray-500 mt-1">
-                  Ваш выбор сохранится на 30 дней.
+                Яндекс.Метрику. Продолжая использовать сайт,
+                вы&nbsp;соглашаетесь с&nbsp;обработкой&nbsp;данных.
+                <span className="mt-3 block text-sm text-gray-300">
+                  Ваш выбор сохранится на&nbsp;30&nbsp;дней.
                 </span>
               </p>
             </div>
@@ -104,13 +104,13 @@ const CookieConsent = () => {
             <div className="flex sm:flex-col items-center gap-2 shrink-0">
               <button
                 onClick={() => setCookieConsent('accepted')}
-                className="px-4 py-2 text-sm font-medium text-white bg-orange hover:bg-orange-second rounded-md transition-colors cursor-pointer"
+                className="px-4 py-2 text-lg font-medium text-white bg-orange hover:bg-orange-second rounded-md transition-colors cursor-pointer"
               >
                 Принять
               </button>
               <button
                 onClick={() => setCookieConsent('declined')}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer"
+                className="px-4 py-2 text-lg font-medium text-gray-200 hover:text-gray-900 transition-colors cursor-pointer"
               >
                 Отклонить
               </button>
