@@ -131,10 +131,15 @@
 .bg-gradient_second {
   background: linear-gradient(
       360deg,
-      rgba(255, 255, 255, 0) 17.12%,
-      rgba(225, 82, 37, 0.85) 100%
+      rgba(255, 255, 255, 0) -57.1%,
+      rgba(229, 103, 64, 0.765) 49.32%,
+      rgba(225, 82, 37, 0.85) 81.71%
     ),
     #f9e1da;
+}
+
+.title_velikmed {
+  text-shadow: -4px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 ::-webkit-scrollbar {

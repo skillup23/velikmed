@@ -69,7 +69,7 @@ export default function Header() {
             <PiPhoneFill className="text-[30px] text-orange" />
             <p className="text-[18px] font-bold">+7 (918) 246-88-77</p>
           </a>
-          <ButtonFeed style="hidden md:block" />
+          <ButtonFeed style="hidden md:block bg-orange" />
         </div>
       </div>
 

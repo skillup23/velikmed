@@ -18,8 +18,8 @@ const navLinks = [
   },
   {
     id: id++,
-    url: '/#feedback',
-    title: 'Отзывы',
+    url: '/#sales',
+    title: 'Акции',
   },
   {
     id: id++,
@@ -64,7 +64,7 @@ import kireeva from '@/public/img/main/doctors/kireeva.png';
 import kolcova from '@/public/img/main/doctors/kolcova.png';
 import saidov from '@/public/img/main/doctors/saidov.png';
 import sis from '@/public/img/main/doctors/sis.png';
-import velikjanina from '@/public/img/main/doctors/velikjanina.png';
+import velikjanina from '@/public/img/main/doctors/velikjanina1.png';
 import kazanceva from '@/public/img/main/doctors/kazanceva.png';
 import eliseev from '@/public/img/main/doctors/eliseev.jpg';
 import kozir from '@/public/img/main/doctors/kozir.jpg';

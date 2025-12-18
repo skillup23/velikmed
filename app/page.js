@@ -1,4 +1,4 @@
-import bannerMain from '@/public/img/main/bannerMain1.png';
+import bannerMain from '@/public/img/main/bannerMain2.png';
 import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
 import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
 import princip from '@/public/img/main/img-princip.png';
@@ -23,15 +23,15 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="relative w-full px-4 py-6 sm:p-12 flex flex-col sm:flex-row justify-between bg-gradient_second rounded-2xl">
             <div className="sm:w-1/2">
-              <h1 className="font-display">Клиника ВеликМЕД</h1>
-              <h5 className="mt-1 sm:mt-3 mb-5 sm:mb-10 leading-5 sm:leading-7">
-                современная клиника
-                <br />
-                доктора Великжаниной
+              <h1 className="font-display text-white title_velikmed">
+                Клиника ВеликМЕД
+              </h1>
+              <h5 className="mt-1 sm:mt-3 mb-5 sm:mb-10 leading-5 sm:leading-7 text-white">
+                современная клиника доктора Великжаниной
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={'hidden sm:block'} />
+              <ButtonFeed style={'hidden sm:block bg-gray-dark'} />
             </div>
             <Image
               src={bannerMain}
@@ -55,7 +55,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={'block sm:hidden mt-4 w-full'} />
+          <ButtonFeed style={'block sm:hidden mt-4 w-full bg-gray-dark'} />
         </div>
       </section>
 
@@ -140,26 +140,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ----------------- Акции ----------------------- */}
+      <section className="section" id="sales">
+        <div className="container mx-auto px-5">
+          <Heading>Акции</Heading>
+          <ul className="mt-6 flex flex-col sm:flex-row gap-6">
+            <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
+              <h4 className="text-xl text-center">
+                КОМПЛЕКС АНАЛИЗОВ «ДЕФИЦИТ»
+              </h4>
+              <p className="mb-2">до 31 декабря</p>
+              <h5 className="line-through">8700 ₽</h5>
+              <h3 className="text-3xl font-bold">1500 ₽</h3>
+
+              <ul className="mt-4 ml-4 sm:ml-0">
+                <li className="list-disc">Клинический анализ крови</li>
+                <li className="list-disc">Биохимия крови, базовый профиль</li>
+                <li className="list-disc">
+                  Общая железосвязывающая способность сыворотки
+                </li>
+                <li className="list-disc">25-ОН витамин D общий</li>
+                <li className="list-disc">Фолиевая кислота</li>
+                <li className="list-disc">Ферритин</li>
+                <li className="list-disc">Трансферрин</li>
+                <li className="list-disc">Витамин В12</li>
+              </ul>
+
+              <h3 className="my-4 text-lg text-center">
+                Подробности уточняйте по телефону:<br></br>
+                <span className="font-bold text-2xl">8 918 246-88-77</span>
+              </h3>
+
+              <p className="mt-auto text-gray-dark text-center text-sm">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
+                СПЕЦИАЛИСТА
+              </p>
+            </li>
+
+            <li className="w-full sm:w-1/2 p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
+              <h4 className="text-xl text-center">
+                СЕАНС БИОЭНЕРГЕТИЧЕСКОГО МАССАЖА
+              </h4>
+              <p className="mb-2">до 31 января</p>
+              <h3 className="text-3xl font-bold">В ПОДАРОК</h3>
+              <h3 className="mt-4 text-2xl text-center">
+                после первичного приема у акушера-гинеколога Великжаниной Е.А.
+              </h3>
+
+              <h3 className="mt-4 text-lg text-center">
+                Подробности уточняйте по телефону:<br></br>
+                <span className="font-bold text-2xl">8 918 246-88-77</span>
+              </h3>
+
+              <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
+                СПЕЦИАЛИСТА
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* ----------------- Новости ----------------------- */}
       <section className="section" id="news">
         <div className="container mx-auto px-5">
           <Heading>Новости</Heading>
           <ul className="mt-6 flex flex-col gap-4">
             <Link href="/news/article1" className="group">
-              <li className="flex rounded-xl border-orange border-2 overflow-hidden">
+              <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
                 <Image
                   src={news1}
                   width="auto"
                   height="auto"
                   alt="Фото"
-                  className="w-1/2 -mb-28 sm:mb-0 sm:w-1/5 h-full"
+                  className="w-full sm:w-1/5 h-full"
                   priority
                 />
-                <div className="p-6 flex flex-col justify-between">
+                <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
                   <p className="group-hover:text-orange transition duration-300">
                     Статья из журнала Красота&Спорт
                   </p>
-                  <h5 className="font-bold group-hover:text-orange transition duration-300">
+                  <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
                     Елена Анатольевна Великжанина
                   </h5>
                   <div className="flex flex-col gap-1">
@@ -167,8 +228,8 @@ export default function Home() {
                     <p>Организатор зравоохранения</p>
                     <p>Главный врач</p>
                     <p>
-                      Генеральный директор многопрофильной клиники ООО
-                      «ВеликМед»
+                      Генеральный директор многопрофильной клиники
+                      ООО&nbsp;«ВеликМед»
                     </p>
                   </div>
                 </div>
@@ -179,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* ----------------- Отзывы ----------------------- */}
-      <section className="section" id="feedback">
+      <section className="section">
         <div className="container mx-auto px-5">
           <Heading>Отзывы</Heading>
           <SliderFeedback />
