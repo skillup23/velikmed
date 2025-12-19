@@ -71,6 +71,9 @@ import kozir from '@/public/img/main/doctors/kozir.jpg';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import efremova from '@/public/img/main/doctors/efremova.jpg';
 import kyarimova from '@/public/img/main/doctors/kyarimova.jpg';
+import urban from '@/public/img/main/doctors/urban.jpg';
+import petrosyan from '@/public/img/main/doctors/petrosyan.jpg';
+import bratchikova from '@/public/img/main/doctors/bratchikova.png';
 
 const doctors = [
   {
@@ -100,6 +103,13 @@ const doctors = [
     spec: 'эндокринолог',
     workYear: 'стаж 11 лет',
     foto: sis,
+  },
+  {
+    id: id++,
+    fio: 'Братчикова Ирина Станиславовна',
+    spec: 'гинеколог',
+    workYear: 'стаж 29 лет',
+    foto: bratchikova,
   },
   {
     id: id++,
@@ -158,14 +168,14 @@ const doctors = [
     fio: 'Урбан Полина Ивановна',
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
-    foto: doctorImg,
+    foto: urban,
   },
   {
     id: id++,
     fio: 'Петросян Мери Сейранова',
     spec: 'педиатр',
     workYear: 'стаж 13 лет',
-    foto: doctorImg,
+    foto: petrosyan,
   },
   {
     id: id++,
@@ -183,19 +193,12 @@ const doctors = [
   },
   {
     id: id++,
-    fio: 'Козырь Лилия Николаевна',
+    fio: 'Козыр Лилия Николаевна',
     spec: 'гинеколог',
     workYear: 'стаж 6 лет',
     foto: kozir,
   },
 
-  // {
-  //   id: id++,
-  //   fio: 'Братчикова Ирина Станиславовна',
-  //   spec: 'гинеколог',
-  //   workYear: 'стаж 29 лет',
-  //   foto: bratchikova,
-  // },
   // {
   //   id: id++,
   //   fio: 'Колесников Евгений Викторович',
