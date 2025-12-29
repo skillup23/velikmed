@@ -5,6 +5,7 @@ import princip from '@/public/img/main/img-princip.png';
 // import mapKontact from '@/public/img/main/map.jpg';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
 import news1 from '@/public/img/news/1.jpg';
+import news2 from '@/public/img/news/article2.jpg';
 import Image from 'next/image';
 import ButtonFeed from './components/ButtonFeed';
 import Doctors from './components/Doctors';
@@ -231,6 +232,35 @@ export default function Home() {
                       Генеральный директор многопрофильной клиники
                       ООО&nbsp;«ВеликМед»
                     </p>
+                  </div>
+                </div>
+              </li>
+            </Link>
+
+            <Link href="/news/article2" className="group">
+              <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
+                <Image
+                  src={news2}
+                  width="auto"
+                  height="auto"
+                  alt="Фото"
+                  className="w-full sm:w-1/5 h-full"
+                  priority
+                />
+                <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
+                  <p className="group-hover:text-orange transition duration-300">
+                    Статья из журнала Красота&Спорт
+                  </p>
+                  <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
+                    «ВеликМед»: медицина, в которую хочется вернуться
+                  </h5>
+                  <div className="flex flex-col gap-1">
+                    <p>Автор:</p>
+                    <p>
+                      Генеральный директор многопрофильной клиники
+                      ООО&nbsp;«ВеликМед»
+                    </p>
+                    <p>Врач акушер-гинеколог со стажем</p>
                   </div>
                 </div>
               </li>
