@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-blue: #1fb6ff;
@@ -151,12 +151,6 @@
   border-radius: 7px;
   background-color: #e15225;
 }
-
-/* ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background-color: #f9f9fd;
-} */
 
 .alice-carousel__stage-item.__active {
   margin: 0 8px;
