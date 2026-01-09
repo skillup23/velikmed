@@ -1,20 +1,31 @@
-import bannerMain from '@/public/img/main/bannerMain2.png';
-import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
-import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
-import princip from '@/public/img/main/img-princip.png';
-// import mapKontact from '@/public/img/main/map.jpg';
-import oKlinike from '@/public/img/main/o-klinike2.jpg';
-import news1 from '@/public/img/news/1.jpg';
-import news2 from '@/public/img/news/article2.jpg';
-import Image from 'next/image';
-import ButtonFeed from './components/ButtonFeed';
-import Doctors from './components/Doctors';
-import Heading from './components/Heading';
-import Princips from './components/Princips';
-import SliderFeedback from './components/SliderFeedback';
-import UslugiMain from './components/UslugiMain';
-import YandexMap2 from './components/YandexMap2';
-import Link from 'next/link';
+import bannerMain from "@/public/img/main/bannerMain2.png";
+import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
+import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
+import princip from "@/public/img/main/img-princip.png";
+import oKlinike from "@/public/img/main/o-klinike2.jpg";
+import news1 from "@/public/img/news/1.jpg";
+import news2 from "@/public/img/news/article2.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import { Suspense, lazy } from "react";
+
+// Критичные компоненты (выше экрана) оставляем как есть
+import ButtonFeed from "./components/ButtonFeed";
+import Heading from "./components/Heading";
+
+// Ленивая загрузка для остальных компонентов
+const Doctors = lazy(() => import("./components/Doctors"));
+const Princips = lazy(() => import("./components/Princips"));
+const SliderFeedback = lazy(() => import("./components/SliderFeedback"));
+const UslugiMain = lazy(() => import("./components/UslugiMain"));
+const YandexMap2 = lazy(() => import("./components/YandexMap2"));
+
+// Fallback компоненты
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center p-8">
+    <div className="w-8 h-8 border-2 border-orange border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 export default function Home() {
   return (
@@ -32,7 +43,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={'hidden sm:block bg-gray-dark'} />
+              <ButtonFeed style={"hidden sm:block bg-gray-dark"} />
             </div>
             <Image
               src={bannerMain}
@@ -56,7 +67,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={'block sm:hidden mt-4 w-full bg-gray-dark'} />
+          <ButtonFeed style={"block sm:hidden mt-4 w-full bg-gray-dark"} />
         </div>
       </section>
 
@@ -64,7 +75,9 @@ export default function Home() {
       <section className="section" id="uslugi">
         <div className="container mx-auto px-5">
           <Heading>Услуги</Heading>
-          <UslugiMain />
+          <Suspense fallback={<LoadingSpinner />}>
+            <UslugiMain />
+          </Suspense>
         </div>
       </section>
 
@@ -73,7 +86,15 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <Heading>Наши принципы</Heading>
           <div className="flex flex-col sm:flex-row">
-            <Princips />
+            <Suspense
+              fallback={
+                <div className="flex-1 min-h-[200px]">
+                  <LoadingSpinner />
+                </div>
+              }
+            >
+              <Princips />
+            </Suspense>
 
             <Image
               src={princip}
@@ -94,7 +115,9 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <div className="p-6 md:p-0 bg-gradient1 rounded-xl">
             <Heading style="text-white">Наши специалисты</Heading>
-            <Doctors />
+            <Suspense fallback={<LoadingSpinner />}>
+              <Doctors />
+            </Suspense>
           </div>
         </div>
       </section>
@@ -123,17 +146,22 @@ export default function Home() {
 
             <Image
               src={oKlinike}
-              width="auto"
-              height="auto"
+              width={500}
+              height={500}
               alt="Баннер Фото"
+              loading="lazy"
+              quality={85}
               className="w-full -mb-28 sm:mb-0 sm:w-1/2 h-full"
-              priority
             />
           </div>
 
           <div className="mt-10 sm:mt-20 w-full h-[203px] lg:h-[406px] flex items-center justify-center bg-[url(../public/img/main/virtToor.jpg)] bg-right bg-cover rounded-2xl">
             <button className="px-4 sm:px-8 py-3 text-[14px] sm:text-[18px] text-white uppercase bg-orange rounded-xl cursor-pointer hover:bg-orange-dark animate-simple">
-              <Link href="https://yandex.ru/maps/-/CLB3MVpN" target="_blank">
+              <Link
+                href="https://yandex.ru/maps/-/CLB3MVpN"
+                target="_blank"
+                prefetch={false} // Не префетчить внешние ссылки
+              >
                 виртуальный тур клиники Великмед
               </Link>
             </button>
@@ -211,11 +239,12 @@ export default function Home() {
               <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
                 <Image
                   src={news1}
-                  width="auto"
-                  height="auto"
+                  width={200}
+                  height={200}
                   alt="Фото"
+                  loading="lazy"
+                  quality={75}
                   className="w-full sm:w-1/5 h-full"
-                  priority
                 />
                 <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
                   <p className="group-hover:text-orange transition duration-300">
@@ -241,11 +270,12 @@ export default function Home() {
               <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
                 <Image
                   src={news2}
-                  width="auto"
-                  height="auto"
+                  width={200}
+                  height={200}
                   alt="Фото"
+                  loading="lazy"
+                  quality={75}
                   className="w-full sm:w-1/5 h-full"
-                  priority
                 />
                 <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
                   <p className="group-hover:text-orange transition duration-300">
@@ -261,6 +291,7 @@ export default function Home() {
                       ООО&nbsp;«ВеликМед»
                     </p>
                     <p>Врач акушер-гинеколог со стажем</p>
+                    <p>Елена Анатольевна Великжанина</p>
                   </div>
                 </div>
               </li>
@@ -273,7 +304,15 @@ export default function Home() {
       <section className="section">
         <div className="container mx-auto px-5">
           <Heading>Отзывы</Heading>
-          <SliderFeedback />
+          <Suspense
+            fallback={
+              <div className="h-48">
+                <LoadingSpinner />
+              </div>
+            }
+          >
+            <SliderFeedback />
+          </Suspense>
         </div>
       </section>
 
@@ -314,15 +353,19 @@ export default function Home() {
               id="map"
               className="w-full sm:max-w-[603px] h-[271px] sm:h-[330px] object-cover rounded-xl overflow-hidden"
             >
-              <YandexMap2 />
+              <Suspense
+                fallback={
+                  <div className="w-full h-full flex items-center justify-center bg-gray-100">
+                    <div className="text-center">
+                      <div className="w-8 h-8 border-2 border-orange border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+                      <p className="text-sm text-gray-600">Загрузка карты...</p>
+                    </div>
+                  </div>
+                }
+              >
+                <YandexMap2 />
+              </Suspense>
             </div>
-            {/* <Image
-              src={mapKontact}
-              width="auto"
-              height="auto"
-              alt="Баннер Фото"
-              className="w-full sm:max-w-[603px] h-[271px] sm:h-full object-cover rounded-xl"
-            /> */}
           </div>
         </div>
       </section>

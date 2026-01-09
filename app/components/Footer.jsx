@@ -1,13 +1,13 @@
-import { navLinks } from '@/public/data/data';
-import imgFooter from '@/public/img/main/img-footer.png';
-import logo from '@/public/img/main/logo-footer.jpg';
-import proDoctorov from '@/public/img/main/pro-doctorov.svg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { BiSolidFileDoc } from 'react-icons/bi';
-import { MdOutlineAccessTimeFilled } from 'react-icons/md';
-import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
-import ProDoctorovButton from './ProDoctorovButton';
+import { navLinks } from "@/public/data/data";
+import imgFooter from "@/public/img/main/img-footer.png";
+import logo from "@/public/img/main/logo-footer.jpg";
+import proDoctorov from "@/public/img/main/pro-doctorov.svg";
+import Image from "next/image";
+import Link from "next/link";
+import { BiSolidFileDoc } from "react-icons/bi";
+import { MdOutlineAccessTimeFilled } from "react-icons/md";
+import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
+import ProDoctorovButton from "./ProDoctorovButton";
 
 export default function Footer() {
   return (
@@ -18,9 +18,11 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src={logo}
-                width="auto"
-                height="auto"
+                width={450}
+                height={100}
                 alt="Лого"
+                loading="lazy"
+                quality={100}
                 className="w-[209px] sm:w-[257px] mt-0 sm:-mt-4 cursor-pointer rounded-lg"
               />
             </Link>
@@ -30,9 +32,11 @@ export default function Footer() {
             >
               <Image
                 src={proDoctorov}
-                width="auto"
-                height="auto"
+                width={450}
+                height={150}
                 alt="Лого"
+                loading="lazy"
+                quality={100}
                 className="hidden md:block w-[150px] sm:w-[257px] mt-1 sm:mt-2 cursor-pointer rounded-lg"
               />
             </Link>
@@ -54,9 +58,11 @@ export default function Footer() {
 
           <Image
             src={proDoctorov}
-            width="auto"
-            height="auto"
+            width={450}
+            height={150}
             alt="Лого"
+            loading="lazy"
+            quality={100}
             className="block md:hidden mx-auto w-[200px] mt-8 sm:mt-2 cursor-pointer rounded-lg"
           />
 
@@ -120,10 +126,11 @@ export default function Footer() {
 
         <Image
           src={imgFooter}
-          width="auto"
-          height="auto"
+          width={50}
+          height={50}
           alt="Красный крестик в круге"
           className="absolute -top-16 md:-top-20 right-6 sm:right-[250px] w-[120px] sm:max-w-[160px]"
+          loading="lazy"
         />
       </div>
 

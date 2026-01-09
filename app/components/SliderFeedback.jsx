@@ -1,11 +1,11 @@
-'use client';
-import arroyLeft from '@/public/img/main/arroyLeftOrange.svg';
-import arroyRight from '@/public/img/main/arroyRightOrange.svg';
-import heart from '@/public/img/main/heart-feedback.png';
-import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+"use client";
+import arroyLeft from "@/public/img/main/arroyLeftOrange.svg";
+import arroyRight from "@/public/img/main/arroyRightOrange.svg";
+import heart from "@/public/img/main/heart-feedback.png";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const responsive = {
   0: { items: 1 },
@@ -160,10 +160,11 @@ const items = [
       <h6 className="mt-16">18.09.2025</h6>
       <Image
         src={heart}
-        width="auto"
-        height="auto"
+        width={50}
+        height={50}
         alt="Сердечко"
         className="absolute bottom-0 right-0 w-[111px] pointer-events-none"
+        loading="lazy"
       />
     </div>
   </div>,
@@ -206,25 +207,27 @@ export default function SliderFeedback() {
             <button onClick={(e) => carousel?.current?.slidePrev(e)}>
               <Image
                 src={arroyLeft}
-                width="auto"
-                height="auto"
+                width={40}
+                height={40}
                 alt="Стрелка влево"
                 className="w-12 cursor-pointer"
+                loading="lazy"
               />
             </button>
             <button onClick={(e) => carousel?.current?.slideNext(e)}>
               <Image
                 src={arroyRight}
-                width="auto"
-                height="auto"
+                width={40}
+                height={40}
                 alt="Стрелка влево"
                 className="w-12 cursor-pointer"
+                loading="lazy"
               />
             </button>
           </div>
         </div>
       ) : (
-        'Is Server'
+        "Is Server"
       )}
     </>
   );

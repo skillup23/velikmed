@@ -8,6 +8,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // experimental: {
+  //   optimizeCss: true, // Включить оптимизацию CSS
+  // },
 };
 
 export default nextConfig;
