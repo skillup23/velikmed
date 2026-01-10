@@ -59,15 +59,16 @@ export default function Doctors() {
         })}
 
         {/* Остальные элементы с анимацией */}
-        {additionalItems.map(({ id, fio, spec, workYear, foto }) => {
+        {additionalItems.map(({ id, fio, spec, workYear, foto, link }) => {
           return (
-            <div
+            <Link
               key={id + 3} // Индекс смещен на 3, чтобы избежать конфликтов
               className={`px-6 flex flex-col items-start justify-between bg-white rounded-xl gap-[10px] md:gap-3 transition-all duration-300 ease-in-out overflow-hidden ${
                 isShowAll
                   ? "mb-6 pt-6 md:pt-8 opacity-100 max-h-[500px]"
                   : "mb-0 pt-0 md:pt-0 opacity-0 max-h-0"
               }`}
+              href={link}
             >
               <h4 className="leading-6 md:leading-8">{fio}</h4>
               <h6 className="my-auto py-2 px-[18px] text-orange border border-orange rounded-2xl inline-block">
@@ -76,12 +77,13 @@ export default function Doctors() {
               <h6 className="z-10">{workYear}</h6>
               <Image
                 src={foto}
-                width="auto"
-                height="auto"
+                width={350}
+                height={350}
+                loading="lazy"
                 alt="Специалист Клиники"
                 className="w-[454px] -mt-6 ml-6 -mr-6 items-end"
               />
-            </div>
+            </Link>
           );
         })}
       </div>

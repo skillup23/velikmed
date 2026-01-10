@@ -90,7 +90,7 @@ const doctors = [
     spec: "гинеколог",
     workYear: "стаж 18 лет",
     foto: efremova,
-    link: "doctors/velikjanina",
+    link: "doctors/efremova",
   },
   {
     id: id++,
@@ -98,7 +98,7 @@ const doctors = [
     spec: "трихолог",
     workYear: "стаж 25 лет",
     foto: drobisheva,
-    link: "doctors/velikjanina",
+    link: "doctors/drobisheva",
   },
   {
     id: id++,
@@ -106,7 +106,7 @@ const doctors = [
     spec: "эндокринолог",
     workYear: "стаж 11 лет",
     foto: sis,
-    link: "doctors/velikjanina",
+    link: "doctors/sis",
   },
   {
     id: id++,
@@ -114,7 +114,7 @@ const doctors = [
     spec: "гинеколог",
     workYear: "стаж 29 лет",
     foto: bratchikova,
-    link: "doctors/velikjanina",
+    link: "doctors/bratchikova",
   },
   {
     id: id++,

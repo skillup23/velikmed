@@ -174,7 +174,7 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
           <ul className="mt-6 flex flex-col sm:flex-row gap-6">
-            <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
+            {/* <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">
                 КОМПЛЕКС АНАЛИЗОВ «ДЕФИЦИТ»
               </h4>
@@ -204,7 +204,7 @@ export default function Home() {
                 ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
                 СПЕЦИАЛИСТА
               </p>
-            </li>
+            </li> */}
 
             <li className="w-full sm:w-1/2 p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">

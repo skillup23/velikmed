@@ -1,0 +1,12 @@
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Host: https://velikmed.ru
+Sitemap: https://velikmed.ru/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://velikmed.ru/sitemap.xml

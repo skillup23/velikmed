@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-10 md:-mt-6 text-center sm:text-start text-white font-medium">
-          ©2025 «ВеликМед»
+          ©2026 «ВеликМед»
         </p>
 
         <Image
