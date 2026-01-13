@@ -1,24 +1,24 @@
-import bannerMain from "@/public/img/main/bannerMain2.png";
-import bannerMainFon from "@/public/img/main/bannerMainFon.svg";
-import bannerMainFonMob from "@/public/img/main/bannerMainFonMob.svg";
-import princip from "@/public/img/main/img-princip.png";
-import oKlinike from "@/public/img/main/o-klinike2.jpg";
-import news1 from "@/public/img/news/1.jpg";
-import news2 from "@/public/img/news/article2.jpg";
-import Image from "next/image";
-import Link from "next/link";
-import { Suspense, lazy } from "react";
+import bannerMain from '@/public/img/main/bannerMain2.png';
+import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
+import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
+import princip from '@/public/img/main/img-princip.png';
+import oKlinike from '@/public/img/main/o-klinike2.jpg';
+import news1 from '@/public/img/news/1.jpg';
+import news2 from '@/public/img/news/article2.jpg';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Suspense, lazy } from 'react';
 
 // Критичные компоненты (выше экрана) оставляем как есть
-import ButtonFeed from "./components/ButtonFeed";
-import Heading from "./components/Heading";
+import ButtonFeed from './components/ButtonFeed';
+import Heading from './components/Heading';
 
 // Ленивая загрузка для остальных компонентов
-const Doctors = lazy(() => import("./components/Doctors"));
-const Princips = lazy(() => import("./components/Princips"));
-const SliderFeedback = lazy(() => import("./components/SliderFeedback"));
-const UslugiMain = lazy(() => import("./components/UslugiMain"));
-const YandexMap2 = lazy(() => import("./components/YandexMap2"));
+const Doctors = lazy(() => import('./components/Doctors'));
+const Princips = lazy(() => import('./components/Princips'));
+const SliderFeedback = lazy(() => import('./components/SliderFeedback'));
+const UslugiMain = lazy(() => import('./components/UslugiMain'));
+const YandexMap2 = lazy(() => import('./components/YandexMap2'));
 
 // Fallback компоненты
 const LoadingSpinner = () => (
@@ -43,7 +43,7 @@ export default function Home() {
                 <br />
                 для заботы о вашем здоровье
               </h5>
-              <ButtonFeed style={"hidden sm:block bg-gray-dark"} />
+              <ButtonFeed style={'hidden sm:block bg-gray-dark'} />
             </div>
             <Image
               src={bannerMain}
@@ -67,7 +67,7 @@ export default function Home() {
               className="sm:hidden absolute right-0 bottom-0"
             />
           </div>
-          <ButtonFeed style={"block sm:hidden mt-4 w-full bg-gray-dark"} />
+          <ButtonFeed style={'block sm:hidden mt-4 w-full bg-gray-dark'} />
         </div>
       </section>
 
@@ -174,38 +174,6 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
           <ul className="mt-6 flex flex-col sm:flex-row gap-6">
-            {/* <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
-              <h4 className="text-xl text-center">
-                КОМПЛЕКС АНАЛИЗОВ «ДЕФИЦИТ»
-              </h4>
-              <p className="mb-2">до 31 декабря</p>
-              <h5 className="line-through">8700 ₽</h5>
-              <h3 className="text-3xl font-bold">1500 ₽</h3>
-
-              <ul className="mt-4 ml-4 sm:ml-0">
-                <li className="list-disc">Клинический анализ крови</li>
-                <li className="list-disc">Биохимия крови, базовый профиль</li>
-                <li className="list-disc">
-                  Общая железосвязывающая способность сыворотки
-                </li>
-                <li className="list-disc">25-ОН витамин D общий</li>
-                <li className="list-disc">Фолиевая кислота</li>
-                <li className="list-disc">Ферритин</li>
-                <li className="list-disc">Трансферрин</li>
-                <li className="list-disc">Витамин В12</li>
-              </ul>
-
-              <h3 className="my-4 text-lg text-center">
-                Подробности уточняйте по телефону:<br></br>
-                <span className="font-bold text-2xl">8 918 246-88-77</span>
-              </h3>
-
-              <p className="mt-auto text-gray-dark text-center text-sm">
-                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
-                СПЕЦИАЛИСТА
-              </p>
-            </li> */}
-
             <li className="w-full sm:w-1/2 p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">
                 СЕАНС БИОЭНЕРГЕТИЧЕСКОГО МАССАЖА
@@ -215,13 +183,32 @@ export default function Home() {
               <h3 className="mt-4 text-2xl text-center">
                 после первичного приема у акушера-гинеколога Великжаниной Е.А.
               </h3>
-
               <h3 className="mt-4 text-lg text-center">
                 Подробности уточняйте по телефону:<br></br>
                 <span className="font-bold text-2xl">8 918 246-88-77</span>
               </h3>
-
               <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
+                СПЕЦИАЛИСТА
+              </p>
+            </li>
+
+            <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
+              <h4 className="text-xl text-center">СКИДКА НА КОМПЛЕКС УЗИ</h4>
+              <p className="mb-2">до 28 февраля</p>
+              <h5 className="line-through">5000 ₽</h5>
+              <h3 className="text-3xl font-bold">3000 ₽</h3>
+              <ul className="mt-4 ml-4 sm:ml-0">
+                <li className="list-disc">Комплекс узи:</li>
+                <li className="list-disc">органов малого таза</li>
+                <li className="list-disc">молочных желёз</li>
+                <li className="list-disc">щитовидной железы</li>
+              </ul>
+              <h3 className="my-4 text-lg text-center">
+                Подробности уточняйте по телефону:<br></br>
+                <span className="font-bold text-2xl">8 918 246-88-77</span>
+              </h3>
+              <p className="mt-auto text-gray-dark text-center text-sm">
                 ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
                 СПЕЦИАЛИСТА
               </p>
