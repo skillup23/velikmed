@@ -204,15 +204,15 @@ const doctors = [
     foto: eliseev,
     link: 'doctors/velikjanina',
   },
-  {
-    id: id++,
-    fio: 'Козыр Лилия Николаевна',
-    spec: 'гинеколог',
-    workYear: 'стаж 6 лет',
-    foto: kozir,
-    link: 'doctors/velikjanina',
-  },
 
+  // {
+  //   id: id++,
+  //   fio: 'Козыр Лилия Николаевна',
+  //   spec: 'гинеколог',
+  //   workYear: 'стаж 6 лет',
+  //   foto: kozir,
+  //   link: 'doctors/velikjanina',
+  // },
   // {
   //   id: id++,
   //   fio: 'Колесников Евгений Викторович',
