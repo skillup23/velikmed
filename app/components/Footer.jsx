@@ -1,13 +1,14 @@
-import { navLinks } from "@/public/data/data";
-import imgFooter from "@/public/img/main/img-footer.png";
-import logo from "@/public/img/main/logo-footer.jpg";
-import proDoctorov from "@/public/img/main/pro-doctorov.svg";
-import Image from "next/image";
-import Link from "next/link";
-import { BiSolidFileDoc } from "react-icons/bi";
-import { MdOutlineAccessTimeFilled } from "react-icons/md";
-import { PiMapPinFill, PiPhoneFill } from "react-icons/pi";
-import ProDoctorovButton from "./ProDoctorovButton";
+import { navLinks } from '@/public/data/data';
+import imgFooter from '@/public/img/main/img-footer.png';
+import logo from '@/public/img/main/logo-footer.png';
+// import proDoctorov from '@/public/img/main/pro-doctorov.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import { BiSolidFileDoc } from 'react-icons/bi';
+import { MdOutlineAccessTimeFilled } from 'react-icons/md';
+import { PiMapPinFill, PiPhoneFill } from 'react-icons/pi';
+import ProDoctorovButton from './ProDoctorovButton';
+import ProDoctorovClinika from './ProDoctorovClinika';
 
 export default function Footer() {
   return (
@@ -26,7 +27,11 @@ export default function Footer() {
                 className="w-[209px] sm:w-[257px] mt-0 sm:-mt-4 cursor-pointer rounded-lg"
               />
             </Link>
-            <Link
+            <div className="hidden md:block ">
+              <ProDoctorovClinika />
+            </div>
+
+            {/* <Link
               href="https://prodoctorov.ru/krasnodar/lpu/105329-klinika-velikmed/"
               target="_blank"
             >
@@ -39,7 +44,7 @@ export default function Footer() {
                 quality={100}
                 className="hidden md:block w-[150px] sm:w-[257px] mt-1 sm:mt-2 cursor-pointer rounded-lg"
               />
-            </Link>
+            </Link> */}
           </div>
 
           <nav className="mt-4 flex sm:hidden flex-row flex-wrap gap-x-[22px] gap-y-4 justify-center">
@@ -56,7 +61,10 @@ export default function Footer() {
             })}
           </nav>
 
-          <Image
+          <div className="block md:hidden mx-auto">
+            <ProDoctorovClinika />
+          </div>
+          {/* <Image
             src={proDoctorov}
             width={450}
             height={150}
@@ -64,7 +72,7 @@ export default function Footer() {
             loading="lazy"
             quality={100}
             className="block md:hidden mx-auto w-[200px] mt-8 sm:mt-2 cursor-pointer rounded-lg"
-          />
+          /> */}
 
           <div className="mt-8 sm:mt-0 sm:-ml-10 flex flex-col justify-between text-white gap-3 sm:gap-7">
             <a

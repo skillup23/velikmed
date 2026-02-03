@@ -196,15 +196,15 @@ const doctors = [
     foto: kazanceva,
     link: 'doctors/velikjanina',
   },
-  {
-    id: id++,
-    fio: 'Елисеев Роман Викторович',
-    spec: 'уролог',
-    workYear: 'стаж 18 лет',
-    foto: eliseev,
-    link: 'doctors/velikjanina',
-  },
 
+  // {
+  //   id: id++,
+  //   fio: 'Елисеев Роман Викторович',
+  //   spec: 'уролог',
+  //   workYear: 'стаж 18 лет',
+  //   foto: eliseev,
+  //   link: 'doctors/velikjanina',
+  // },
   // {
   //   id: id++,
   //   fio: 'Козыр Лилия Николаевна',
