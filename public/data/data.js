@@ -59,7 +59,7 @@ const princips = [
 import diadchenko from '@/public/img/main/doctors/diadchenko.png';
 import drobisheva from '@/public/img/main/doctors/drobisheva.png';
 import velikzhanin from '@/public/img/main/doctors/velikzhanin.jpg';
-// import doctorImg from '@/public/img/main/doctors/doctorNoFon.png';
+import doctorImg from '@/public/img/main/doctors/doctorNoFon.png';
 import bratchikova from '@/public/img/main/doctors/bratchikova.png';
 import efremova from '@/public/img/main/doctors/efremova.jpg';
 import eliseev from '@/public/img/main/doctors/eliseev.jpg';
@@ -194,6 +194,14 @@ const doctors = [
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
     foto: kazanceva,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Селиванова Анастасия Николаевна',
+    spec: 'педиатр, детский гастроэнтеролог',
+    workYear: 'стаж 13 лет',
+    foto: doctorImg,
     link: 'doctors/velikjanina',
   },
 
