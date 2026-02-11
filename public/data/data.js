@@ -66,7 +66,7 @@ import eliseev from '@/public/img/main/doctors/eliseev.jpg';
 import kazanceva from '@/public/img/main/doctors/kazanceva.png';
 import kireeva from '@/public/img/main/doctors/kireeva.png';
 import kolcova from '@/public/img/main/doctors/kolcova.png';
-import kozir from '@/public/img/main/doctors/kozir.jpg';
+import selivanova from '@/public/img/main/doctors/selivanova.png';
 import kyarimova from '@/public/img/main/doctors/kyarimova.jpg';
 import petrosyan from '@/public/img/main/doctors/petrosyan.jpg';
 import saidov from '@/public/img/main/doctors/saidov.png';
@@ -201,7 +201,7 @@ const doctors = [
     fio: 'Селиванова Анастасия Николаевна',
     spec: 'педиатр, детский гастроэнтеролог',
     workYear: 'стаж 13 лет',
-    foto: doctorImg,
+    foto: selivanova,
     link: 'doctors/velikjanina',
   },
 

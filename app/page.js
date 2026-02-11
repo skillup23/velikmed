@@ -173,27 +173,8 @@ export default function Home() {
       <section className="section" id="sales">
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
-          <ul className="mt-6 flex flex-col sm:flex-row gap-6">
-            {/* <li className="w-full sm:w-1/2 p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
-              <h4 className="text-xl text-center">
-                СЕАНС БИОЭНЕРГЕТИЧЕСКОГО МАССАЖА
-              </h4>
-              <p className="mb-2">до 31 января</p>
-              <h3 className="text-3xl font-bold">В ПОДАРОК</h3>
-              <h3 className="mt-4 text-2xl text-center">
-                после первичного приема у акушера-гинеколога Великжаниной Е.А.
-              </h3>
-              <h3 className="mt-4 text-lg text-center">
-                Подробности уточняйте по телефону:<br></br>
-                <span className="font-bold text-2xl">8 918 246-88-77</span>
-              </h3>
-              <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
-                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
-                СПЕЦИАЛИСТА
-              </p>
-            </li> */}
-
-            <li className="w-full sm:w-1/2 p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
+          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <li className="w-full p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">СКИДКА НА КОМПЛЕКС УЗИ</h4>
               <p className="mb-2">до 28 февраля</p>
               <h5 className="line-through">5000 ₽</h5>
@@ -209,6 +190,92 @@ export default function Home() {
                 <span className="font-bold text-2xl">8 918 246-88-77</span>
               </h3>
               <p className="mt-auto text-gray-dark text-center text-sm">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
+                СПЕЦИАЛИСТА
+              </p>
+            </li>
+
+            <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
+              <h4 className="text-xl text-center">
+                Профилактика репродуктивного старения - мужчины
+              </h4>
+              <p className="mb-2">до 31 марта</p>
+              <h5 className="line-through">9305 ₽</h5>
+              <h3 className="text-3xl font-bold">4500 ₽</h3>
+              <ul className="mt-4 mx-4">
+                <li className="list-disc">
+                  Клинический анализ крови с лейкоцитарной формулой (5DIFF) +
+                  СОЭ
+                </li>
+                <li className="list-disc">Гликированный гемоглобин А1с</li>
+                <li className="list-disc">Аланинаминотрансфераза (АЛТ)</li>
+                <li className="list-disc">Аспартатаминотрансфераза (АСТ)</li>
+                <li className="list-disc">
+                  Простатоспецифический антиген (ПСА) общий
+                </li>
+                <li className="list-disc">Общий белок</li>
+                <li className="list-disc">Холестерин общий</li>
+                <li className="list-disc">Триглицериды</li>
+                <li className="list-disc">
+                  Холестерин липопротеидов низкой плотности (ЛПНП, LDL)
+                </li>
+                <li className="list-disc">
+                  Холестерин липопротеидов высокой плотности (ЛПВП, HDL)
+                </li>
+                <li className="list-disc">
+                  25-OH витамин D, суммарный (кальциферол)
+                </li>
+                <li className="list-disc">Тестостерон общий</li>
+              </ul>
+              <h3 className="mt-4 text-lg text-center">
+                Подробности уточняйте по телефону:<br></br>
+                <span className="font-bold text-2xl">8 918 246-88-77</span>
+              </h3>
+              <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
+                СПЕЦИАЛИСТА
+              </p>
+            </li>
+
+            <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
+              <h4 className="text-xl text-center">
+                Профилактика репродуктивного старения - женщины
+              </h4>
+              <p className="mb-2">до 31 марта</p>
+              <h5 className="line-through">9305 ₽</h5>
+              <h3 className="text-3xl font-bold">4500 ₽</h3>
+              <ul className="mt-4 mx-4">
+                <li className="list-disc">
+                  Клинический анализ крови с лейкоцитарной формулой (5DIFF) +
+                  СОЭ
+                </li>
+                <li className="list-disc">
+                  Антимюллеров гормон (АМГ, АМН, MiS)
+                </li>
+                <li className="list-disc">Антиген СА 125</li>
+                <li className="list-disc">Гликированный гемоглобин А1с</li>
+                <li className="list-disc">
+                  Холестерин липопротеидов низкой плотности (ЛПНП, LDL)
+                </li>
+                <li className="list-disc">
+                  Холестерин липопротеидов высокой плотности (ЛПВП, HDL)
+                </li>
+                <li className="list-disc">Триглицериды</li>
+                <li className="list-disc">Инсулин</li>
+                <li className="list-disc">Общий белок</li>
+                <li className="list-disc">Ингибин В</li>
+                <li className="list-disc">Аланинаминотрансфераза (АЛТ)</li>
+                <li className="list-disc">Аспартатаминотрансфераза (АСТ)</li>
+                <li className="list-disc">
+                  25-OH витамин D, суммарный (кальциферол)
+                </li>
+                <li className="list-disc">Холестерин общий</li>
+              </ul>
+              <h3 className="mt-4 text-lg text-center">
+                Подробности уточняйте по телефону:<br></br>
+                <span className="font-bold text-2xl">8 918 246-88-77</span>
+              </h3>
+              <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
                 ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
                 СПЕЦИАЛИСТА
               </p>
