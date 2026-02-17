@@ -74,6 +74,7 @@ import sis from '@/public/img/main/doctors/sis.png';
 import urban from '@/public/img/main/doctors/urban.jpg';
 import velikjanina from '@/public/img/main/doctors/velikjanina1.png';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
+import skobelev from '@/public/img/main/doctors/skobelev.jpg';
 
 const doctors = [
   {
@@ -202,6 +203,14 @@ const doctors = [
     spec: 'педиатр, детский гастроэнтеролог',
     workYear: 'стаж 13 лет',
     foto: selivanova,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Скобелев Петр Петрович',
+    spec: 'Андролог, врач УЗИ, уролог',
+    workYear: 'стаж 31 лет',
+    foto: skobelev,
     link: 'doctors/velikjanina',
   },
 
