@@ -3,6 +3,7 @@ import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
 import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
 import princip from '@/public/img/main/img-princip.png';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
+import yandexGood from '@/public/img/main/yandexGood.webp';
 import news1 from '@/public/img/news/1.jpg';
 import news2 from '@/public/img/news/article2.jpg';
 import Image from 'next/image';
@@ -155,16 +156,34 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-10 sm:mt-20 w-full h-[203px] lg:h-[406px] flex items-center justify-center bg-[url(../public/img/main/virtToor.jpg)] bg-right bg-cover rounded-2xl">
-            <button className="px-4 sm:px-8 py-3 text-[14px] sm:text-[18px] text-white uppercase bg-orange rounded-xl cursor-pointer hover:bg-orange-dark animate-simple">
-              <Link
-                href="https://yandex.ru/maps/-/CLB3MVpN"
-                target="_blank"
-                prefetch={false} // Не префетчить внешние ссылки
-              >
-                виртуальный тур клиники Великмед
-              </Link>
-            </button>
+          <div className="mt-10 sm:mt-20 flex flex-col sm:flex-row gap-6">
+            <div className="w-full h-[203px] lg:h-[406px] flex items-center justify-center bg-[url(../public/img/main/virtToor.jpg)] bg-right bg-cover rounded-2xl">
+              <button className="px-4 sm:px-8 py-3 text-[14px] sm:text-[18px] text-white uppercase bg-orange rounded-xl cursor-pointer hover:bg-orange-dark animate-simple">
+                <Link
+                  href="https://yandex.ru/maps/-/CLB3MVpN"
+                  target="_blank"
+                  prefetch={false} // Не префетчить внешние ссылки
+                >
+                  виртуальный тур клиники Великмед
+                </Link>
+              </button>
+            </div>
+            <Link
+              href="https://yandex.ru/maps/-/CParJR~r"
+              target="_blank"
+              prefetch={false}
+              className="hidden sm:block w-1/4"
+            >
+              <Image
+                src={yandexGood}
+                width={500}
+                height={500}
+                alt="Хорошее Место по мнению Яндекс"
+                loading="lazy"
+                quality={85}
+                className="sm:h-[203px] lg:h-[406px] rounded-xl"
+              />
+            </Link>
           </div>
         </div>
       </section>
@@ -420,6 +439,23 @@ export default function Home() {
                 <YandexMap2 />
               </Suspense>
             </div>
+
+            <Link
+              href="https://yandex.ru/maps/-/CParJR~r"
+              target="_blank"
+              prefetch={false}
+              className="block sm:hidden"
+            >
+              <Image
+                src={yandexGood}
+                width={500}
+                height={500}
+                alt="Хорошее Место по мнению Яндекс"
+                loading="lazy"
+                quality={85}
+                className="sm:h-[203px] lg:h-[406px] rounded-xl"
+              />
+            </Link>
           </div>
         </div>
       </section>
