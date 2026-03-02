@@ -193,7 +193,7 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <li className="w-full p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
+            {/* <li className="w-full p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">СКИДКА НА КОМПЛЕКС УЗИ</h4>
               <p className="mb-2">до 28 февраля</p>
               <h5 className="line-through">5000 ₽</h5>
@@ -212,7 +212,7 @@ export default function Home() {
                 ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
                 СПЕЦИАЛИСТА
               </p>
-            </li>
+            </li> */}
 
             <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">
