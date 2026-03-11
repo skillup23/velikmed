@@ -75,6 +75,7 @@ import urban from '@/public/img/main/doctors/urban.jpg';
 import velikjanina from '@/public/img/main/doctors/velikjanina1.png';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import skobelev from '@/public/img/main/doctors/skobelev.jpg';
+import sinanskaya from '@/public/img/main/doctors/sinanskaya.jpg';
 
 const doctors = [
   {
@@ -208,9 +209,17 @@ const doctors = [
   {
     id: id++,
     fio: 'Скобелев Петр Петрович',
-    spec: 'Андролог, врач УЗИ, уролог',
+    spec: 'андролог, врач УЗИ, уролог',
     workYear: 'стаж 31 лет',
     foto: skobelev,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Синянская Марина Николаевна',
+    spec: 'гинеколог, врач УЗИ',
+    workYear: 'стаж 21 лет',
+    foto: sinanskaya,
     link: 'doctors/velikjanina',
   },
 
