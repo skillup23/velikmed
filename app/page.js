@@ -6,6 +6,7 @@ import oKlinike from '@/public/img/main/o-klinike2.jpg';
 import yandexGood from '@/public/img/main/yandexGood.webp';
 import news1 from '@/public/img/news/1.jpg';
 import news2 from '@/public/img/news/article2.jpg';
+import news3 from '@/public/img/news/VelikmedMart2026.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense, lazy } from 'react';
@@ -307,69 +308,80 @@ export default function Home() {
       <section className="section" id="news">
         <div className="container mx-auto px-5">
           <Heading>Новости</Heading>
-          <ul className="mt-6 flex flex-col gap-4">
-            <Link href="/news/article1" className="group">
-              <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
-                <Image
-                  src={news1}
-                  width={200}
-                  height={200}
-                  alt="Фото"
-                  loading="lazy"
-                  quality={75}
-                  className="w-full sm:w-1/5 h-full"
-                />
-                <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
-                  <p className="group-hover:text-orange transition duration-300">
-                    Статья из журнала Красота&Спорт
-                  </p>
-                  <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
-                    Елена Анатольевна Великжанина
-                  </h5>
-                  <div className="flex flex-col gap-1">
-                    <p>Врач акушер-гинеколог со стажем</p>
-                    <p>Организатор зравоохранения</p>
-                    <p>Главный врач</p>
-                    <p>
-                      Генеральный директор многопрофильной клиники
-                      ООО&nbsp;«ВеликМед»
+          <div className="mt-6 flex flex-col sm:flex-row gap-4">
+            <Image
+              src={news3}
+              width={500}
+              height={800}
+              alt="Фото"
+              loading="lazy"
+              quality={75}
+              className="w-full sm:w-1/2 h-full border-orange border-2 rounded-xl"
+            />
+            <ul className="flex flex-col gap-4">
+              <Link href="/news/article1" className="group">
+                <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
+                  <Image
+                    src={news1}
+                    width={200}
+                    height={200}
+                    alt="Фото"
+                    loading="lazy"
+                    quality={75}
+                    className="w-full sm:w-1/3 h-full"
+                  />
+                  <div className="p-6 flex flex-col justify-between gap-3 sm:gap-4 text-center">
+                    <p className="group-hover:text-orange transition duration-300">
+                      Статья из журнала Красота&Спорт
                     </p>
+                    <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
+                      Елена Анатольевна Великжанина
+                    </h5>
+                    <div className="flex flex-col gap-4">
+                      <p>Врач акушер-гинеколог со стажем</p>
+                      <p>Организатор зравоохранения</p>
+                      <p>Главный врач</p>
+                      <p>
+                        Генеральный директор многопрофильной клиники
+                        ООО&nbsp;«ВеликМед»
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </Link>
+                </li>
+              </Link>
 
-            <Link href="/news/article2" className="group">
-              <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
-                <Image
-                  src={news2}
-                  width={200}
-                  height={200}
-                  alt="Фото"
-                  loading="lazy"
-                  quality={75}
-                  className="w-full sm:w-1/5 h-full"
-                />
-                <div className="p-6 flex flex-col justify-between gap-3 sm:gap-0 text-center sm:text-start">
-                  <p className="group-hover:text-orange transition duration-300">
-                    Статья из журнала Красота&Спорт
-                  </p>
-                  <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
-                    «ВеликМед»: медицина, в которую хочется вернуться
-                  </h5>
-                  <div className="flex flex-col gap-1">
-                    <p>Автор:</p>
-                    <p>
-                      Генеральный директор многопрофильной клиники
-                      ООО&nbsp;«ВеликМед»
+              <Link href="/news/article2" className="group">
+                <li className="flex flex-col sm:flex-row rounded-xl border-orange border-2 overflow-hidden">
+                  <Image
+                    src={news2}
+                    width={200}
+                    height={200}
+                    alt="Фото"
+                    loading="lazy"
+                    quality={75}
+                    className="w-full sm:w-1/3 h-full"
+                  />
+                  <div className="p-6 flex flex-col justify-between gap-3 sm:gap-4 text-center">
+                    <p className="group-hover:text-orange transition duration-300">
+                      Статья из журнала Красота&Спорт
                     </p>
-                    <p>Врач акушер-гинеколог со стажем</p>
-                    <p>Елена Анатольевна Великжанина</p>
+                    <h5 className="font-bold text-xl group-hover:text-orange transition duration-300">
+                      «ВеликМед»: медицина, в которую хочется вернуться
+                    </h5>
+                    <div className="flex flex-col gap-4">
+                      <p>Автор:</p>
+                      <p>
+                        Генеральный директор многопрофильной клиники
+                        ООО&nbsp;«ВеликМед»
+                      </p>
+                      <p>Врач акушер-гинеколог со стажем</p>
+                      <p>Елена Анатольевна Великжанина</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </Link>
-          </ul>
+                </li>
+              </Link>
+            </ul>
+          </div>
         </div>
       </section>
 

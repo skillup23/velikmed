@@ -222,6 +222,14 @@ const doctors = [
     foto: sinanskaya,
     link: 'doctors/velikjanina',
   },
+  {
+    id: id++,
+    fio: 'Глушкова Софья Юрьевна',
+    spec: 'врач УЗИ',
+    workYear: 'стаж 26 лет',
+    foto: doctorImg,
+    link: 'doctors/velikjanina',
+  },
 
   // {
   //   id: id++,
