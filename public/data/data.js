@@ -58,7 +58,7 @@ const princips = [
 
 import diadchenko from '@/public/img/main/doctors/diadchenko.png';
 import drobisheva from '@/public/img/main/doctors/drobisheva.png';
-import velikzhanin from '@/public/img/main/doctors/velikzhanin.jpg';
+import velikzhanin from '@/public/img/main/doctors/velikzhanin.png';
 import doctorImg from '@/public/img/main/doctors/doctorNoFon.png';
 import bratchikova from '@/public/img/main/doctors/bratchikova.png';
 import efremova from '@/public/img/main/doctors/efremova.jpg';
@@ -76,6 +76,7 @@ import velikjanina from '@/public/img/main/doctors/velikjanina1.png';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import skobelev from '@/public/img/main/doctors/skobelev.jpg';
 import sinanskaya from '@/public/img/main/doctors/sinanskaya.jpg';
+import beresovskaya from '@/public/img/main/doctors/beresovskaya.png';
 
 const doctors = [
   {
@@ -230,6 +231,14 @@ const doctors = [
     foto: doctorImg,
     link: 'doctors/velikjanina',
   },
+  {
+    id: id++,
+    fio: 'Березовская Ирина Леонидовна',
+    spec: 'онколог',
+    workYear: 'стаж 33 год',
+    foto: beresovskaya,
+    link: 'doctors/velikjanina',
+  },
 
   // {
   //   id: id++,
@@ -281,13 +290,6 @@ const doctors = [
   //   spec: 'гинеколог, акушер, врач\u00A0УЗИ',
   //   workYear: 'стаж 20 лет',
   //   foto: sinanskaya,
-  // },
-  // {
-  //   id: id++,
-  //   fio: 'Березовская Ирина Леонидовна',
-  //   spec: 'дерматолог, онколог, трихолог, врач-косметолог',
-  //   workYear: 'стаж 31 год',
-  //   foto: beresovskaya,
   // },
   // {
   //   id: id++,
