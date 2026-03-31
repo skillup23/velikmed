@@ -194,58 +194,28 @@ export default function Home() {
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* <li className="w-full p-5 flex flex-col items-center rounded-xl bg-orange text-white gap-2">
-              <h4 className="text-xl text-center">СКИДКА НА КОМПЛЕКС УЗИ</h4>
-              <p className="mb-2">до 28 февраля</p>
-              <h5 className="line-through">5000 ₽</h5>
-              <h3 className="text-3xl font-bold">3000 ₽</h3>
-              <ul className="mt-4 ml-4 sm:ml-0">
-                <li className="list-disc">Комплекс узи:</li>
-                <li className="list-disc">органов малого таза</li>
-                <li className="list-disc">молочных желёз</li>
-                <li className="list-disc">щитовидной железы</li>
-              </ul>
-              <h3 className="my-4 text-lg text-center">
-                Подробности уточняйте по телефону:<br></br>
-                <span className="font-bold text-2xl">8 918 246-88-77</span>
-              </h3>
-              <p className="mt-auto text-gray-dark text-center text-sm">
-                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
-                СПЕЦИАЛИСТА
-              </p>
-            </li> */}
-
             <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">
-                Профилактика репродуктивного старения - мужчины
+                Витамины и минералы: базовый комплекс
               </h4>
-              <p className="mb-2">до 31 марта</p>
-              <h5 className="line-through">9305 ₽</h5>
-              <h3 className="text-3xl font-bold">4500 ₽</h3>
+              <p className="mb-2">до 31 мая</p>
+              <h5 className="line-through">4890 ₽</h5>
+              <h3 className="text-3xl font-bold">1400 ₽</h3>
+              <p className="text-center">
+                Оценка обеспеченности организма витаминами
+                (D,&nbsp;В9,&nbsp;В12) и минералами (кальцием, фосфором,
+                магнием, железом). Выявление причин повышенной утомляемости,
+                общей и мышечной слабости, раздражительности, сонливости,
+                головных болей, частых простудных&nbsp;заболеваний.
+              </p>
               <ul className="mt-4 mx-4">
-                <li className="list-disc">
-                  Клинический анализ крови с лейкоцитарной формулой (5DIFF) +
-                  СОЭ
-                </li>
-                <li className="list-disc">Гликированный гемоглобин А1с</li>
-                <li className="list-disc">Аланинаминотрансфераза (АЛТ)</li>
-                <li className="list-disc">Аспартатаминотрансфераза (АСТ)</li>
-                <li className="list-disc">
-                  Простатоспецифический антиген (ПСА) общий
-                </li>
-                <li className="list-disc">Общий белок</li>
-                <li className="list-disc">Холестерин общий</li>
-                <li className="list-disc">Триглицериды</li>
-                <li className="list-disc">
-                  Холестерин липопротеидов низкой плотности (ЛПНП, LDL)
-                </li>
-                <li className="list-disc">
-                  Холестерин липопротеидов высокой плотности (ЛПВП, HDL)
-                </li>
-                <li className="list-disc">
-                  25-OH витамин D, суммарный (кальциферол)
-                </li>
-                <li className="list-disc">Тестостерон общий</li>
+                <li className="list-disc">Витамин В12</li>
+                <li className="list-disc">Фолиевая кислота</li>
+                <li className="list-disc">Кальций общий (Ca)</li>
+                <li className="list-disc">Фосфор неорганический (P)</li>
+                <li className="list-disc">Магний (Мg) в сыворотке крови</li>
+                <li className="list-disc">Железо (Fe) в сыворотке крови</li>
+                <li className="list-disc">25-OH витамин D общий</li>
               </ul>
               <h3 className="mt-4 text-lg text-center">
                 Подробности уточняйте по телефону:<br></br>
@@ -259,37 +229,39 @@ export default function Home() {
 
             <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-xl text-center">
-                Профилактика репродуктивного старения - женщины
+                Здоров ты – здорова страна
               </h4>
               <p className="mb-2">до 31 марта</p>
-              <h5 className="line-through">9305 ₽</h5>
-              <h3 className="text-3xl font-bold">4500 ₽</h3>
+              <h5 className="line-through">12560 ₽</h5>
+              <h3 className="text-3xl font-bold">3800 ₽</h3>
               <ul className="mt-4 mx-4">
                 <li className="list-disc">
-                  Клинический анализ крови с лейкоцитарной формулой (5DIFF) +
-                  СОЭ
+                  Клинический анализ крови: общий анализ, лейкоформула
                 </li>
                 <li className="list-disc">
-                  Антимюллеров гормон (АМГ, АМН, MiS)
+                  Глюкоза, Общий белок, Альбумин, АЛТ, АСТ
                 </li>
-                <li className="list-disc">Антиген СА 125</li>
-                <li className="list-disc">Гликированный гемоглобин А1с</li>
+                <li className="list-disc">HbA1c (гликированный гемоглобин)</li>
+                <li className="list-disc">Билирубин общий, прямой</li>
                 <li className="list-disc">
-                  Холестерин липопротеидов низкой плотности (ЛПНП, LDL)
+                  Гамма-глутамилтранспептидаза (ГГТ)
+                </li>
+                <li className="list-disc">Триглицериды (ТГ)</li>
+                <li className="list-disc">Холестерин общий, ЛПВП, ЛПНП</li>
+                <li className="list-disc">Мочевая кислота</li>
+                <li className="list-disc">Тиреотропный гормон (ТТГ)</li>
+                <li className="list-disc">Тироксин свободный (Т4 свободный)</li>
+                <li className="list-disc">Креатинин</li>
+                <li className="list-disc">25-OH витамин D общий</li>
+                <li className="list-disc">Фолиевая кислота</li>
+                <li className="list-disc">
+                  Витамин В12, Железо (Fe), Кальций общий (Ca), Магний (Мg){' '}
                 </li>
                 <li className="list-disc">
-                  Холестерин липопротеидов высокой плотности (ЛПВП, HDL)
+                  Фосфор неорганический (P), Медь (Cu), Селен (Se), Цинк
+                  (Zn){' '}
                 </li>
-                <li className="list-disc">Триглицериды</li>
-                <li className="list-disc">Инсулин</li>
-                <li className="list-disc">Общий белок</li>
-                <li className="list-disc">Ингибин В</li>
-                <li className="list-disc">Аланинаминотрансфераза (АЛТ)</li>
-                <li className="list-disc">Аспартатаминотрансфераза (АСТ)</li>
-                <li className="list-disc">
-                  25-OH витамин D, суммарный (кальциферол)
-                </li>
-                <li className="list-disc">Холестерин общий</li>
+                <li className="list-disc">Калий/Натрий/Хлор</li>
               </ul>
               <h3 className="mt-4 text-lg text-center">
                 Подробности уточняйте по телефону:<br></br>
