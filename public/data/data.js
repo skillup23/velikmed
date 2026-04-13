@@ -77,6 +77,7 @@ import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import skobelev from '@/public/img/main/doctors/skobelev.jpg';
 import sinanskaya from '@/public/img/main/doctors/sinanskaya.jpg';
 import beresovskaya from '@/public/img/main/doctors/beresovskaya.png';
+import glushkova from '@/public/img/main/doctors/glushkova.png';
 
 const doctors = [
   {
@@ -226,9 +227,9 @@ const doctors = [
   {
     id: id++,
     fio: 'Глушкова Софья Юрьевна',
-    spec: 'врач УЗИ',
+    spec: 'врач УЗИ, психолог',
     workYear: 'стаж 26 лет',
-    foto: doctorImg,
+    foto: glushkova,
     link: 'doctors/velikjanina',
   },
   {
