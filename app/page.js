@@ -195,20 +195,15 @@ export default function Home() {
           <Heading>Акции</Heading>
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
-              <h4 className="text-xl text-center">
-                Витамины и минералы: базовый комплекс
+              <h4 className="text-3xl font-bold text-center uppercase">
+                Акция
               </h4>
               <p className="mb-2">до 31 мая</p>
-              <h5 className="line-through">4890 ₽</h5>
-              <h3 className="text-3xl font-bold">1400 ₽</h3>
-              <p className="text-center">
-                Оценка обеспеченности организма витаминами
-                (D,&nbsp;В9,&nbsp;В12) и минералами (кальцием, фосфором,
-                магнием, железом). Выявление причин повышенной утомляемости,
-                общей и мышечной слабости, раздражительности, сонливости,
-                головных болей, частых простудных&nbsp;заболеваний.
-              </p>
-              <ul className="mt-4 mx-4">
+              <h4 className="text-3xl font-bold text-center uppercase">
+                Витамины и минералы:<br></br>
+                <span className="text-xl">базовый комплекс</span>
+              </h4>
+              <ul className="my-4 mx-4">
                 <li className="list-disc">Витамин В12</li>
                 <li className="list-disc">Фолиевая кислота</li>
                 <li className="list-disc">Кальций общий (Ca)</li>
@@ -217,6 +212,8 @@ export default function Home() {
                 <li className="list-disc">Железо (Fe) в сыворотке крови</li>
                 <li className="list-disc">25-OH витамин D общий</li>
               </ul>
+              <h5 className="line-through text-3xl">4890 ₽</h5>
+              <h3 className="text-5xl font-bold">1600 ₽</h3>
               <h3 className="mt-4 text-lg text-center">
                 Подробности уточняйте по телефону:<br></br>
                 <span className="font-bold text-2xl">8 918 246-88-77</span>
@@ -228,46 +225,22 @@ export default function Home() {
             </li>
 
             <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
-              <h4 className="text-xl text-center">
-                Здоров ты – здорова страна
+              <h4 className="text-3xl font-bold text-center uppercase">
+                Акция
               </h4>
-              <p className="mb-2">до 31 марта</p>
-              <h5 className="line-through">12560 ₽</h5>
-              <h3 className="text-3xl font-bold">3800 ₽</h3>
-              <ul className="mt-4 mx-4">
-                <li className="list-disc">
-                  Клинический анализ крови: общий анализ, лейкоформула
-                </li>
-                <li className="list-disc">
-                  Глюкоза, Общий белок, Альбумин, АЛТ, АСТ
-                </li>
-                <li className="list-disc">HbA1c (гликированный гемоглобин)</li>
-                <li className="list-disc">Билирубин общий, прямой</li>
-                <li className="list-disc">
-                  Гамма-глутамилтранспептидаза (ГГТ)
-                </li>
-                <li className="list-disc">Триглицериды (ТГ)</li>
-                <li className="list-disc">Холестерин общий, ЛПВП, ЛПНП</li>
-                <li className="list-disc">Мочевая кислота</li>
-                <li className="list-disc">Тиреотропный гормон (ТТГ)</li>
-                <li className="list-disc">Тироксин свободный (Т4 свободный)</li>
-                <li className="list-disc">Креатинин</li>
-                <li className="list-disc">25-OH витамин D общий</li>
-                <li className="list-disc">Фолиевая кислота</li>
-                <li className="list-disc">
-                  Витамин В12, Железо (Fe), Кальций общий (Ca), Магний (Мg){' '}
-                </li>
-                <li className="list-disc">
-                  Фосфор неорганический (P), Медь (Cu), Селен (Se), Цинк
-                  (Zn){' '}
-                </li>
-                <li className="list-disc">Калий/Натрий/Хлор</li>
-              </ul>
+              <p className="mb-2">до 31 мая</p>
+              <h4 className="text-3xl font-bold text-center uppercase">
+                Здоров ты – <br />
+                здорова страна
+              </h4>
+              <h4 className="mt-4 text-3xl text-center">Чек-ап анализы</h4>
+              <h5 className="mt-auto line-through text-3xl">12560 ₽</h5>
+              <h3 className="text-5xl font-bold">4000 ₽</h3>
               <h3 className="mt-4 text-lg text-center">
                 Подробности уточняйте по телефону:<br></br>
                 <span className="font-bold text-2xl">8 918 246-88-77</span>
               </h3>
-              <p className="mt-auto text-gray-dark text-center text-sm justify-self-end">
+              <p className="text-gray-dark text-center text-sm justify-self-end">
                 ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ <br></br>НЕОБХОДИМА КОНСУЛЬТАЦИЯ
                 СПЕЦИАЛИСТА
               </p>
