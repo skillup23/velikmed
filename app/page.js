@@ -1,6 +1,6 @@
-import bannerMain from '@/public/img/main/bannerMain2.png';
+import bannerMain from '@/public/img/main/bannerMain3.png';
 import bannerMainFon from '@/public/img/main/bannerMainFon.svg';
-import bannerMainFonMob from '@/public/img/main/bannerMainFonMob.svg';
+import bannerMainFonMob from '@/public/img/main/bannerMainFonMob2.svg';
 import princip from '@/public/img/main/img-princip.png';
 import oKlinike from '@/public/img/main/o-klinike2.jpg';
 import yandexGood from '@/public/img/main/yandexGood.webp';
@@ -52,7 +52,7 @@ export default function Home() {
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="w-[253px] sm:w-[453px] -mb-6 sm:-mb-12 sm:-mt-22 ml-auto sm:ml-12 -mr-3 sm:-mr-12 z-10"
+              className="w-[300px] sm:w-[453px] -mb-6 sm:-mb-12 sm:-mt-22 ml-auto sm:ml-12 -mr-4 sm:-mr-12 z-10 rounded-2xl"
             />
             <Image
               src={bannerMainFon}
@@ -66,7 +66,7 @@ export default function Home() {
               width="auto"
               height="auto"
               alt="Баннер Фото"
-              className="sm:hidden absolute right-0 bottom-0"
+              className="sm:hidden absolute right-0 bottom-0 w-full rounded-2xl"
             />
           </div>
           <ButtonFeed style={'block sm:hidden mt-4 w-full bg-gray-dark'} />
