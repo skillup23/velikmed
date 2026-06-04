@@ -78,6 +78,7 @@ import velikjanina from '@/public/img/main/doctors/velikjanina1.png';
 import velikzhanin from '@/public/img/main/doctors/velikzhanin.png';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import ozeren from '@/public/img/main/doctors/ozeren.jpg';
+import marinec from '@/public/img/main/doctors/marinec.jpg';
 
 const doctors = [
   {
@@ -254,6 +255,14 @@ const doctors = [
     spec: 'уролог, врач УЗИ',
     workYear: 'стаж 7 лет',
     foto: ozeren,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Маринец Лия Александровна',
+    spec: 'врач УЗИ',
+    workYear: 'стаж 10 лет',
+    foto: marinec,
     link: 'doctors/velikjanina',
   },
 
