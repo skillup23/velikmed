@@ -183,7 +183,7 @@ const doctors = [
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
     foto: urban,
-    link: 'doctors/velikjanina',
+    link: 'doctors/urban',
   },
   {
     id: id++,
@@ -191,7 +191,7 @@ const doctors = [
     spec: 'педиатр',
     workYear: 'стаж 13 лет',
     foto: petrosyan,
-    link: 'doctors/velikjanina',
+    link: 'doctors/petrosyan',
   },
   {
     id: id++,
@@ -199,7 +199,7 @@ const doctors = [
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
     foto: kazanceva,
-    link: 'doctors/velikjanina',
+    link: 'doctors/kazanceva',
   },
   {
     id: id++,
@@ -207,7 +207,7 @@ const doctors = [
     spec: 'педиатр, детский гастроэнтеролог',
     workYear: 'стаж 13 лет',
     foto: selivanova,
-    link: 'doctors/velikjanina',
+    link: 'doctors/selivanova',
   },
   {
     id: id++,
@@ -215,7 +215,7 @@ const doctors = [
     spec: 'андролог, врач УЗИ, уролог',
     workYear: 'стаж 31 лет',
     foto: skobelev,
-    link: 'doctors/velikjanina',
+    link: 'doctors/skobelev',
   },
   {
     id: id++,
