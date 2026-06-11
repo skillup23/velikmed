@@ -79,6 +79,7 @@ import velikzhanin from '@/public/img/main/doctors/velikzhanin.png';
 import zozylenko from '@/public/img/main/doctors/zozylenko.jpg';
 import ozeren from '@/public/img/main/doctors/ozeren.jpg';
 import marinec from '@/public/img/main/doctors/marinec.jpg';
+import anosova from '@/public/img/main/doctors/anosova.jpg';
 
 const doctors = [
   {
@@ -263,6 +264,14 @@ const doctors = [
     spec: 'врач УЗИ',
     workYear: 'стаж 10 лет',
     foto: marinec,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Аносова Дарья Андреевна',
+    spec: 'косметолог, дерматолог',
+    workYear: 'стаж 21 год',
+    foto: anosova,
     link: 'doctors/velikjanina',
   },
 
