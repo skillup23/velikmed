@@ -67,7 +67,7 @@ import kireeva from '@/public/img/main/doctors/kireeva.png';
 import kolba from '@/public/img/main/doctors/kolba.jpg';
 import kolcova from '@/public/img/main/doctors/kolcova.png';
 import kyarimova from '@/public/img/main/doctors/kyarimova.jpg';
-import petrosyan from '@/public/img/main/doctors/petrosyan.jpg';
+// import petrosyan from '@/public/img/main/doctors/petrosyan.jpg';
 import saidov from '@/public/img/main/doctors/saidov.png';
 import selivanova from '@/public/img/main/doctors/selivanova.png';
 import sinanskaya from '@/public/img/main/doctors/sinanskaya.jpg';
@@ -189,14 +189,6 @@ const doctors = [
   },
   {
     id: id++,
-    fio: 'Петросян Мери Сейрановна',
-    spec: 'педиатр',
-    workYear: 'стаж 13 лет',
-    foto: petrosyan,
-    link: 'doctors/petrosyan',
-  },
-  {
-    id: id++,
     fio: 'Казанцева Юлия Андреевна',
     spec: 'кардиолог',
     workYear: 'стаж 18 лет',
@@ -284,6 +276,14 @@ const doctors = [
     link: 'doctors/velikjanina',
   },
 
+  // {
+  //   id: id++,
+  //   fio: 'Петросян Мери Сейрановна',
+  //   spec: 'педиатр',
+  //   workYear: 'стаж 13 лет',
+  //   foto: petrosyan,
+  //   link: 'doctors/petrosyan',
+  // },
   // {
   //   id: id++,
   //   fio: 'Елисеев Роман Викторович',
