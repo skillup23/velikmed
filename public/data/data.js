@@ -81,6 +81,7 @@ import ozeren from '@/public/img/main/doctors/ozeren.jpg';
 import marinec from '@/public/img/main/doctors/marinec.jpg';
 import anosova from '@/public/img/main/doctors/anosova.jpg';
 import muhamedzhanova from '@/public/img/main/doctors/muhamedzhanova.jpg';
+import doctorNoFon from '@/public/img/main/doctors/doctorNoFon.png';
 
 const doctors = [
   {
@@ -273,6 +274,14 @@ const doctors = [
     spec: 'гинеколог',
     workYear: 'стаж 35 лет',
     foto: muhamedzhanova,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Панферова Ольга Юрьевна',
+    spec: 'психолог',
+    workYear: 'стаж 4 года',
+    foto: doctorNoFon,
     link: 'doctors/velikjanina',
   },
 

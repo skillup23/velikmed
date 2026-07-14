@@ -32,4 +32,40 @@
     <loc>https://velikmed.ru/doctors/zozylenko/</loc>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/kyarimova/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/velikzhanin/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/kolcova/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/diadchenko/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/kireeva/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/urban/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/kazanceva/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/selivanova/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://velikmed.ru/doctors/skobelev/</loc>
+    <priority>0.9</priority>
+  </url>
 </urlset>
