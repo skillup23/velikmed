@@ -7,10 +7,10 @@ import yandexGood from '@/public/img/main/yandexGood.webp';
 import news1 from '@/public/img/news/1.jpg';
 import news2 from '@/public/img/news/article2.jpg';
 import news3 from '@/public/img/news/VelikmedMart2026.jpg';
-import sales1 from '@/public/img/main/sales/sales1-1008.jpg';
-import sales2 from '@/public/img/main/sales/sales2-1008.jpg';
-import sales3 from '@/public/img/main/sales/sales3-100826.jpg';
-import sales4 from '@/public/img/main/sales/sales4-100826.jpg';
+import sales1 from '@/public/img/main/sales/sales1-10082026.jpg';
+import sales2 from '@/public/img/main/sales/sales2-10082026.jpg';
+import sales3 from '@/public/img/main/sales/sales3-10082026.jpg';
+import sales4 from '@/public/img/main/sales/sales4-10082026.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense, lazy } from 'react';
@@ -197,7 +197,7 @@ export default function Home() {
       <section className="section" id="sales">
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
-          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Link
               href="/img/main/sales/sales1-100826.pdf"
               target="_blank"
