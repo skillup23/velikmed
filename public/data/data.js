@@ -82,6 +82,7 @@ import marinec from '@/public/img/main/doctors/marinec.jpg';
 import anosova from '@/public/img/main/doctors/anosova.jpg';
 import muhamedzhanova from '@/public/img/main/doctors/muhamedzhanova.jpg';
 import panferova from '@/public/img/main/doctors/panferova.png';
+import bocharova from '@/public/img/main/doctors/bocharova.jpg';
 import doctorNoFon from '@/public/img/main/doctors/doctorNoFon.png';
 
 const doctors = [
@@ -283,6 +284,14 @@ const doctors = [
     spec: 'психолог',
     workYear: 'стаж 4 года',
     foto: panferova,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Бочарова Татьяна Вадимовна',
+    spec: 'педиатр',
+    workYear: 'стаж 7 лет',
+    foto: bocharova,
     link: 'doctors/velikjanina',
   },
 
