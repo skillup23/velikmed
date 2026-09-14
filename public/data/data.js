@@ -85,6 +85,7 @@ import panferova from '@/public/img/main/doctors/panferova.png';
 import bocharova from '@/public/img/main/doctors/bocharova.jpg';
 import doctorNoFon from '@/public/img/main/doctors/doctorNoFon.png';
 import pokul from '@/public/img/main/doctors/pokul.jpg';
+import kotova from '@/public/img/main/doctors/kotova.png';
 
 const doctors = [
   {
@@ -309,6 +310,7 @@ const doctors = [
     spec: 'психолог',
     workYear: 'стаж 19 лет',
     foto: kotova,
+    link: 'doctors/velikjanina',
   },
 
   // {
