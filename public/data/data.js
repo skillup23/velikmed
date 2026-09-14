@@ -84,6 +84,7 @@ import muhamedzhanova from '@/public/img/main/doctors/muhamedzhanova.jpg';
 import panferova from '@/public/img/main/doctors/panferova.png';
 import bocharova from '@/public/img/main/doctors/bocharova.jpg';
 import doctorNoFon from '@/public/img/main/doctors/doctorNoFon.png';
+import pokul from '@/public/img/main/doctors/pokul.jpg';
 
 const doctors = [
   {
@@ -294,6 +295,21 @@ const doctors = [
     foto: bocharova,
     link: 'doctors/velikjanina',
   },
+  {
+    id: id++,
+    fio: 'Покуль Лилиана Викторовна',
+    spec: 'акушер-гинеколог, онколог',
+    workYear: 'стаж 33 года',
+    foto: pokul,
+    link: 'doctors/velikjanina',
+  },
+  {
+    id: id++,
+    fio: 'Котова Татьяна Николаевна',
+    spec: 'психолог',
+    workYear: 'стаж 19 лет',
+    foto: kotova,
+  },
 
   // {
   //   id: id++,
@@ -326,13 +342,7 @@ const doctors = [
   //   workYear: 'стаж 31 год',
   //   foto: kolesnikov,
   // },
-  // {
-  //   id: id++,
-  //   fio: 'Котова Татьяна Николаевна',
-  //   spec: 'психолог',
-  //   workYear: 'стаж 19 лет',
-  //   foto: kotova,
-  // },
+
   // {
   //   id: id++,
   //   fio: "Киракосьян Марина Робертовна",
