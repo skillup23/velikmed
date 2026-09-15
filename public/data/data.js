@@ -416,6 +416,11 @@ const documents = [
     title: 'Правила обслуживания льготных категорий граждан',
     url: '#',
   },
+  {
+    id: id++,
+    title: 'Политика обработки персональных данных',
+    url: '/privacy-policy',
+  },
 ];
 
 export { doctors, documents, navLinks, princips };

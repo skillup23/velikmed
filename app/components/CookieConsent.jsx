@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const CookieConsent = () => {
@@ -70,7 +71,7 @@ const CookieConsent = () => {
       document,
       'script',
       'https://mc.yandex.ru/metrika/tag.js?id=105637836',
-      'ym'
+      'ym',
     );
 
     window.ym(105637836, 'init', {
@@ -94,7 +95,13 @@ const CookieConsent = () => {
               <p className="text-base sm:text-lg text-white leading-6">
                 Мы используем файлы cookie для анализа трафика через
                 Яндекс.Метрику. Продолжая использовать сайт,
-                вы&nbsp;соглашаетесь с&nbsp;обработкой&nbsp;данных.
+                вы&nbsp;соглашаетесь{' '}
+                <Link
+                  href="/privacy-policy"
+                  className="underline hover:text-gray-200 transition-colors"
+                >
+                  с&nbsp;политикой&nbsp;обработки персональных&nbsp;данных.
+                </Link>
                 <span className="mt-3 block text-sm text-gray-300">
                   Ваш выбор сохранится на&nbsp;30&nbsp;дней.
                 </span>
