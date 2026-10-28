@@ -197,8 +197,11 @@ export default function Home() {
       <section className="section" id="sales">
         <div className="container mx-auto px-5">
           <Heading>Акции</Heading>
+          <h4 className="text-lg sm:text-xl font-semibold text-slate-900 mt-4 sm:mt-6">
+            На данный момент акций клиника не проводит
+          </h4>
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Link
+            {/* <Link
               href="/img/main/sales/sales1-100826.pdf"
               target="_blank"
               prefetch={false}
@@ -257,7 +260,7 @@ export default function Home() {
                 quality={75}
                 className="w-full h-full border-orange border-2 rounded-xl"
               />
-            </Link>
+            </Link> */}
             {/* <li className="w-full p-5 flex flex-col items-center justify-between rounded-xl bg-orange text-white gap-2">
               <h4 className="text-3xl font-bold text-center uppercase">
                 Акция
